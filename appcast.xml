@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>Vibeduck Changelog</title>
+        <link>https://github.com/SmithWinter/Vibeduck-releases/releases</link>
+        <description>Most recent changes with links to updates.</description>
+        <language>en</language>
+        <item>
+            <title>Version 1.6.3</title>
+            <pubDate>Fri, 06 Nov 2026 20:44:08 +0700</pubDate>
+            <sparkle:version>1.6.3</sparkle:version>
+            <sparkle:shortVersionString>1.6.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <link>https://github.com/SmithWinter/Vibeduck-releases/releases/download/v1.6.3/Vibeduck.dmg</link>
+            <sparkle:informationalUpdate>
+                <sparkle:belowVersion>1.5.0</sparkle:belowVersion>
+            </sparkle:informationalUpdate>
+            <description><![CDATA[
+<p><strong>New safe house.</strong> I moved my downloads out of a cramped Gist and into a proper public warehouse.</p>
+<h3>What changed</h3>
+<ul>
+<li>Downloads and updates now come from <a href="https://github.com/SmithWinter/Vibeduck-releases">Vibeduck-releases</a>, a public repo with every version I've shipped. You don't need to do anything: this update quietly points me at the new address, and the old one keeps working for anyone who hasn't caught up yet.</li>
+</ul>
+            ]]></description>
+            <description xml:lang="vi"><![CDATA[
+<p><strong>Nhà an toàn mới.</strong> Mình dọn chỗ để hàng ra khỏi cái Gist chật chội, chuyển về một kho public rộng rãi.</p>
+<h3>Thay đổi</h3>
+<ul>
+<li>Bản tải về và bản cập nhật giờ lấy từ <a href="https://github.com/SmithWinter/Vibeduck-releases">Vibeduck-releases</a>, repo public chứa mọi phiên bản mình từng phát hành. Bạn không cần làm gì cả: bản cập nhật này tự chỉ mình sang địa chỉ mới, còn địa chỉ cũ vẫn chạy cho những ai chưa kịp cập nhật.</li>
+</ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/SmithWinter/Vibeduck-releases/releases/download/v1.6.3/Vibeduck.dmg"
+                sparkle:edSignature="tj+LP1LvOeVBNpZE8xJYaqp9sRerWi2aYshRjMYXT6M7KJIw2KaAVK7Egt2Pf1w072C2bZfoqLeXynLnna9UAg=="
+                length="69329970"
+                type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.6.2</title>
+            <pubDate>Fri, 06 Nov 2026 18:44:51 +0700</pubDate>
+            <sparkle:version>1.6.2</sparkle:version>
+            <sparkle:shortVersionString>1.6.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <link>https://github.com/SmithWinter/Vibeduck-releases/releases/download/v1.6.2/Vibeduck.dmg</link>
+            <sparkle:informationalUpdate>
+                <sparkle:belowVersion>1.5.0</sparkle:belowVersion>
+            </sparkle:informationalUpdate>
+            <description><![CDATA[
+<p><strong>Loose ends.</strong> A few things I should have caught before leaving the safe house.</p>
+<h3>Fixed</h3>
+<ul>
+<li><strong>Updating doesn't need your help anymore.</strong> When you click Install Update, the old me quits properly and the new me starts, instead of hiding in the menu bar until you quit by hand. Any conversion still running in the background is stopped too.</li>
+<li><strong>The Mission Briefing actually opens.</strong> Its window was coming up too small to see.</li>
+<li><strong>Setup speaks Vietnamese.</strong> The first-run checklist was still in English under a Vietnamese title. It's translated now, and it sounds like me.</li>
+</ul>
+<h3>What's new</h3>
+<ul>
+<li><strong>A proper menu bar menu.</strong> Click my icon in the menu bar for your deliveries, Smuggle into Safari, Raid Chromium City, Settings, the Mission Briefing, Check for Updates, and Quit (⌘Q).</li>
+</ul>
+            ]]></description>
+            <description xml:lang="vi"><![CDATA[
+<p><strong>Gỡ nốt mấy nút thắt.</strong> Vài thứ đáng lẽ mình phải phát hiện trước khi rời nhà an toàn.</p>
+<h3>Sửa lỗi</h3>
+<ul>
+<li><strong>Cập nhật không cần bạn ra tay nữa.</strong> Bấm Cài đặt cập nhật là bản cũ của mình thoát hẳn và bản mới tự chạy, thay vì trốn trên thanh menu cho tới khi bạn tự tắt. Chuyến chuyển đổi nào còn chạy ngầm cũng được dừng luôn.</li>
+<li><strong>Hồ sơ nhiệm vụ mở được rồi.</strong> Cửa sổ của nó trước đây hiện ra bé tới mức không nhìn thấy.</li>
+<li><strong>Phần thiết lập đã nói tiếng Việt.</strong> Danh sách các bước lần đầu vẫn là tiếng Anh dưới một tiêu đề tiếng Việt. Giờ đã được dịch, và nghe giống giọng mình.</li>
+</ul>
+<h3>Có gì mới</h3>
+<ul>
+<li><strong>Menu thanh menu cho đàng hoàng.</strong> Bấm vào icon của mình trên thanh menu để xem hàng đã giao, Tuồn vào Safari, Đột kích Thành phố Chromium, Cài đặt, Hồ sơ nhiệm vụ, Kiểm tra cập nhật và Thoát (⌘Q).</li>
+</ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/SmithWinter/Vibeduck-releases/releases/download/v1.6.2/Vibeduck.dmg"
+                sparkle:edSignature="4QR0wI/ySd/O4C731VSm6D8LQuOdDMoiETPUIbJq5J0KlAx8PD8KsmkmUAUfUWbSdPlbW+R0c4g3nJ6c78uhAg=="
+                length="69329573"
+                type="application/octet-stream" />
+        </item>
+        <item>
+            <title>Version 1.6.1</title>
+            <pubDate>Fri, 06 Nov 2026 18:18:22 +0700</pubDate>
+            <sparkle:version>1.6.1</sparkle:version>
+            <sparkle:shortVersionString>1.6.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <link>https://github.com/SmithWinter/Vibeduck-releases/releases/download/v1.6.1/Vibeduck.dmg</link>
+            <sparkle:informationalUpdate>
+                <sparkle:belowVersion>1.5.0</sparkle:belowVersion>
+            </sparkle:informationalUpdate>
+            <description><![CDATA[
+<p><strong>New hat, same duck.</strong> I got tired of looking like a bath toy, so I bought a fedora.</p>
+<h3>What's new</h3>
+<ul>
+<li><strong>A proper disguise.</strong> The logo now has me in a spy hat. You'll see it in the Dock, the menu bar, the Safari extension and the installer.</li>
+<li><strong>Things move now.</strong> You can watch the crate travel from Chromium City to the Safari Zone while I work. It gets a stamp when it arrives, and the screen gives a little shake when a run doesn't make it. If Reduce Motion is on, I keep still.</li>
+<li><strong>The installer is a mission file.</strong> Open the DMG and you get a map with a TOP SECRET stamp and a dashed route from the pick-up to the safe house. Drag me across the line into Applications.</li>
+<li><strong>One file for everything.</strong> Updates arrive as the same DMG you'd download by hand, so no more installer package and no admin password. If you're still on Viaduct OpenGUI 1.4.0, Sparkle shows you the update with a link to download it yourself.</li>
+<li><strong>Release notes in your language.</strong> The update window shows these notes in Vietnamese when the app runs in Vietnamese.</li>
+<li><strong>I talk like a person now.</strong> The app, the briefing, the notifications and these notes were rewritten so they sound less like a manual and more like me. I go by Agent D for short.</li>
+</ul>
+            ]]></description>
+            <description xml:lang="vi"><![CDATA[
+<p><strong>Mũ mới, vẫn con vịt đó.</strong> Nhìn mình giống vịt cao su thả bồn tắm mãi cũng chán, nên mình sắm một cái mũ phớt.</p>
+<h3>Có gì mới</h3>
+<ul>
+<li><strong>Ngụy trang cho ra dáng.</strong> Logo giờ là mình đội mũ điệp viên. Bạn sẽ thấy nó trên Dock, thanh menu, extension Safari và bộ cài.</li>
+<li><strong>Mọi thứ biết chuyển động.</strong> Trong lúc mình làm việc, bạn sẽ thấy thùng hàng chạy từ Thành phố Chromium về Vùng Safari. Tới nơi thì được đóng dấu, còn chuyến nào không qua được thì màn hình khẽ lắc một cái. Nếu bạn bật Giảm chuyển động, mình sẽ đứng yên.</li>
+<li><strong>Bộ cài là một hồ sơ mật.</strong> Mở DMG ra là thấy tấm bản đồ có dấu TOP SECRET và một lộ trình nét đứt từ điểm nhận hàng tới nhà an toàn. Kéo mình qua vạch để vào Applications.</li>
+<li><strong>Một file cho tất cả.</strong> Bản cập nhật giờ chính là file DMG bạn tải về cài tay, không còn gói cài đặt và không phải nhập mật khẩu admin. Nếu bạn vẫn đang dùng Viaduct OpenGUI 1.4.0, Sparkle sẽ báo có bản mới kèm link để bạn tự tải về.</li>
+<li><strong>Ghi chú cập nhật theo ngôn ngữ của bạn.</strong> Khi app chạy tiếng Việt, cửa sổ cập nhật hiện sổ tay này bằng tiếng Việt.</li>
+<li><strong>Mình nói chuyện như người rồi.</strong> Chữ trong app, hồ sơ nhiệm vụ, thông báo và cả sổ tay này đều được viết lại, đọc giống mình đang kể chuyện hơn là đọc hướng dẫn sử dụng. Gọi tắt mình là Agent D cũng được.</li>
+</ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/SmithWinter/Vibeduck-releases/releases/download/v1.6.1/Vibeduck.dmg"
+                sparkle:edSignature="3vPwsRYc7ez9mUpIii0SFQa0uAvWffZRN4ckz1vBeto4+K2p7FCtqVnOAcrHbKK9gRJ0RAYJN0S5egpbRcqzCA=="
+                length="69325899"
+                type="application/octet-stream" />
+        </item>
+    </channel>
+</rss>
