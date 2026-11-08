@@ -6,6 +6,86 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>Version 2.0.0</title>
+            <pubDate>Sun, 08 Nov 2026 21:30:05 +0700</pubDate>
+            <sparkle:version>2.0.0</sparkle:version>
+            <sparkle:shortVersionString>2.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <link>https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.0/Vibeduck.dmg</link>
+            <sparkle:informationalUpdate>
+                <sparkle:belowVersion>1.5.0</sparkle:belowVersion>
+            </sparkle:informationalUpdate>
+            <description><![CDATA[
+<p>A fresh new look, a simpler default style, and converting straight from a Chrome Web Store link. Needs macOS 13.5 or later.</p>
+<h3>New</h3>
+<ul>
+<li><strong>Two styles: Standard and Agent.</strong> Standard is the new default: clear words and a plain duck. Prefer some fun? Turn on Agent Mode in Settings → General and the app becomes a playful spy story, with a duck in a fedora. The Dock and menu bar icons change to match.</li>
+<li><strong>Convert from a Chrome Web Store link.</strong> Paste a link with ⌘V, drop it on the window, or choose File → Convert from Web Store Link…. Vibeduck downloads the extension and converts it for you.</li>
+<li><strong>A What's New screen for people coming from 1.x.</strong> It shows once, the first time you open 2.0. You can see it again any time from Help → What's New in Vibeduck.</li>
+<li><strong>Open Safari Settings from the finished screen.</strong> One button takes you straight to your new extension so you can switch it on. A small label also tells you whether it was signed with your free Apple account.</li>
+<li><strong>Help for Macs without an Apple account.</strong> Step-by-step instructions show how to let Safari run extensions that aren't signed, with a button that opens Safari. Find it on the finished screen and in setup.</li>
+<li><strong>Sounds.</strong> A short tune and a stamp in Agent mode, a soft chime in Standard mode. They only play if "Play user interface sound effects" is on in your Mac's settings.</li>
+</ul>
+<h3>Improved</h3>
+<ul>
+<li><strong>A cleaner design everywhere.</strong> The main window, Settings, setup, menus and pop-up windows were redesigned to look good in both light and dark mode. Progress, success and failure screens now have gentle animations.</li>
+<li><strong>Settings in four tabs.</strong> General, Extensions, Advanced and About replace one long page. Click any extension to see its details and whether Safari is happy with it.</li>
+<li><strong>Pick English or Tiếng Việt.</strong> On first launch, Vibeduck uses your Mac's language.</li>
+<li><strong>Converting several at once is smoother.</strong> Vibeduck asks about signing once, before it starts. Anything that failed gets a Retry Failed button, and each item's details are one click away.</li>
+<li><strong>Clearer error messages.</strong> Problems are explained in plain words. Click Show Details if you want the full report.</li>
+<li><strong>Better for keyboard and VoiceOver users.</strong> Every switch in Settings has a name and works with the Space bar. VoiceOver announces progress and when a conversion is done, and status text is easier to read in light mode.</li>
+<li><strong>Safer links from websites.</strong> If a web page asks Vibeduck to install or remove something, Vibeduck asks you first. The Add to Safari button on the Chrome Web Store still works in one click.</li>
+<li><strong>More reliable conversions.</strong> Vibeduck now uses one tested version of the converter (1.18.0) instead of grabbing the newest. Converter updates arrive with app updates. Its built-in helper is updated too, and every download of it is checked to make sure it's genuine.</li>
+<li><strong>Tidier behind the scenes.</strong> The app icon is now the plain duck (the fedora appears in Agent mode). Very large extension settings (over 5 MB) are skipped when moving them to Safari, and the log says so. Old leftover files and code are cleaned up, and test copies of Vibeduck no longer get mixed up with the real app.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>Finished conversions always show the success screen, even if the window was hidden.</li>
+<li><strong>Your files are safe.</strong> Vibeduck only deletes copies it saved itself. Removing an item from your history moves its saved copy to the Trash, and nothing else is touched.</li>
+<li>Converting an extension again no longer deletes the original file it came from.</li>
+<li>All the extensions you converted with 1.x now show up in your history after upgrading.</li>
+<li>Cancel and Quit now fully stop a conversion in progress. ⌘Q quits Vibeduck, while closing the last window keeps it in the menu bar.</li>
+</ul>
+            ]]></description>
+            <description xml:lang="vi"><![CDATA[
+<p>Giao diện mới toanh, kiểu hiển thị mặc định đơn giản hơn, và chuyển đổi thẳng từ liên kết Chrome Web Store. Cần macOS 13.5 trở lên.</p>
+<h3>Mới</h3>
+<ul>
+<li><strong>Hai chế độ: Tiêu chuẩn và Đặc vụ.</strong> Chế độ Tiêu chuẩn là mặc định mới: chữ rõ ràng, chú vịt đơn giản. Thích vui hơn? Bật Chế độ Đặc vụ trong Cài đặt → Chung, app sẽ biến thành một câu chuyện điệp viên dí dỏm với chú vịt đội mũ phớt. Icon trên Dock và thanh menu cũng đổi theo.</li>
+<li><strong>Chuyển đổi từ liên kết Chrome Web Store.</strong> Dán liên kết bằng ⌘V, thả liên kết vào cửa sổ, hoặc chọn Tệp → Chuyển đổi từ liên kết Web Store…. Vibeduck sẽ tự tải extension về và chuyển đổi giúp bạn.</li>
+<li><strong>Màn hình Có gì mới cho người lên từ 1.x.</strong> Màn hình này hiện một lần, khi bạn mở 2.0 lần đầu. Muốn xem lại thì vào Trợ giúp → Có gì mới trong Vibeduck.</li>
+<li><strong>Mở Cài đặt Safari ngay từ màn hình hoàn tất.</strong> Một nút bấm đưa bạn thẳng tới extension vừa chuyển đổi để bật lên. Bên cạnh còn có nhãn nhỏ cho biết extension đã được ký bằng tài khoản Apple miễn phí của bạn hay chưa.</li>
+<li><strong>Hướng dẫn cho máy chưa có tài khoản Apple.</strong> Các bước cụ thể giúp bạn cho phép Safari chạy extension chưa được ký, kèm nút mở Safari. Bạn tìm thấy hướng dẫn này ở màn hình hoàn tất và trong phần thiết lập.</li>
+<li><strong>Âm thanh.</strong> Một đoạn nhạc ngắn và tiếng đóng dấu ở Chế độ Đặc vụ, tiếng chuông nhẹ ở Chế độ Tiêu chuẩn. Chỉ phát khi máy Mac đang bật "Phát hiệu ứng âm thanh giao diện người dùng".</li>
+</ul>
+<h3>Cải thiện</h3>
+<ul>
+<li><strong>Thiết kế gọn gàng hơn ở mọi nơi.</strong> Cửa sổ chính, Cài đặt, phần thiết lập, menu và các cửa sổ bật lên đều được thiết kế lại, đẹp ở cả chế độ sáng lẫn tối. Màn hình tiến độ, hoàn tất và báo lỗi giờ có hiệu ứng chuyển động nhẹ nhàng.</li>
+<li><strong>Cài đặt chia thành 4 tab.</strong> Chung, Extensions, Nâng cao và Giới thiệu thay cho một trang dài. Bấm vào extension bất kỳ để xem chi tiết và biết Safari có chạy ổn với nó không.</li>
+<li><strong>Chọn English hoặc Tiếng Việt.</strong> Lần mở đầu tiên, Vibeduck dùng ngôn ngữ của máy Mac.</li>
+<li><strong>Chuyển đổi nhiều extension cùng lúc mượt hơn.</strong> Vibeduck chỉ hỏi về việc ký một lần, trước khi bắt đầu. Mục nào lỗi sẽ có nút Thử lại mục lỗi, và chi tiết của từng mục chỉ cách một cú bấm.</li>
+<li><strong>Thông báo lỗi dễ hiểu hơn.</strong> Lỗi được giải thích bằng lời thường. Muốn xem đầy đủ thì bấm Xem chi tiết.</li>
+<li><strong>Dễ dùng hơn với bàn phím và VoiceOver.</strong> Mọi công tắc trong Cài đặt đều có tên và bật tắt được bằng phím Space. VoiceOver đọc tiến độ và báo khi chuyển đổi xong, chữ trạng thái ở chế độ sáng cũng dễ đọc hơn.</li>
+<li><strong>An toàn hơn với liên kết từ trang web.</strong> Khi một trang web nhờ Vibeduck cài hoặc gỡ thứ gì đó, Vibeduck sẽ hỏi bạn trước. Nút Add to Safari trên Chrome Web Store vẫn chỉ cần một cú bấm như cũ.</li>
+<li><strong>Chuyển đổi ổn định hơn.</strong> Vibeduck giờ dùng đúng một phiên bản bộ chuyển đổi đã được kiểm tra kỹ (1.18.0), thay vì tự lấy bản mới nhất. Bộ chuyển đổi chỉ được cập nhật cùng với app. Công cụ hỗ trợ đi kèm cũng được nâng cấp, và mỗi lần tải về đều được kiểm tra để chắc chắn không bị giả mạo.</li>
+<li><strong>Dọn dẹp bên trong.</strong> Icon app giờ là chú vịt đơn giản (mũ phớt chỉ xuất hiện ở Chế độ Đặc vụ). Cài đặt của extension quá lớn (trên 5 MB) sẽ được bỏ qua khi chuyển sang Safari, và nhật ký sẽ ghi lại điều đó. File và code cũ còn sót được dọn sạch, bản thử nghiệm của Vibeduck cũng không còn lẫn với app thật.</li>
+</ul>
+<h3>Đã sửa</h3>
+<ul>
+<li>Chuyển đổi xong là luôn hiện màn hình hoàn tất, kể cả khi cửa sổ đang bị ẩn.</li>
+<li><strong>File của bạn được an toàn.</strong> Vibeduck chỉ xóa những bản sao do chính nó lưu. Xóa một mục trong lịch sử sẽ chuyển bản sao đó vào Thùng rác, ngoài ra không đụng tới gì khác.</li>
+<li>Chuyển đổi lại một extension không còn xóa mất file gốc của nó.</li>
+<li>Mọi extension bạn từng chuyển đổi bằng bản 1.x giờ đều hiện đủ trong lịch sử sau khi nâng cấp.</li>
+<li>Hủy và Thoát giờ dừng hẳn chuyến chuyển đổi đang chạy. ⌘Q thoát hẳn Vibeduck, còn đóng cửa sổ cuối cùng thì app vẫn nằm trên thanh menu.</li>
+</ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.0/Vibeduck.dmg"
+                sparkle:edSignature="Ica4V7c5FZrqc9PnKK9gmKakyFLkkJ+3mrfBYR0vMDwF5Zmsx7OUF9mno77ajRBpp9z/6Y1m1l0r/P8T/8okDw=="
+                length="101067210"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.6.3</title>
             <pubDate>Fri, 06 Nov 2026 20:44:08 +0700</pubDate>
             <sparkle:version>1.6.3</sparkle:version>
