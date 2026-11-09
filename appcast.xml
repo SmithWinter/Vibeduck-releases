@@ -6,6 +6,46 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>Version 2.0.2</title>
+            <pubDate>Mon, 09 Nov 2026 21:27:51 +0700</pubDate>
+            <sparkle:version>2.0.2</sparkle:version>
+            <sparkle:shortVersionString>2.0.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <link>https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.2/Vibeduck.dmg</link>
+            <sparkle:informationalUpdate>
+                <sparkle:belowVersion>1.5.0</sparkle:belowVersion>
+            </sparkle:informationalUpdate>
+            <description xml:lang="en"><![CDATA[
+<p>Fixes for full-screen mode and icon styling, plus a restyled install window.</p>
+<h3>Changed</h3>
+<ul>
+<li><strong>A calmer install window.</strong> The window you drag Vibeduck into Applications from now matches the app's Standard style — a plain charcoal backdrop with one clear arrow to Applications — instead of the 1.x mission-map look.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li><strong>Menu bar menu works in full-screen apps.</strong> Clicking the Vibeduck icon in the menu bar now opens reliably even when another app is taking up the full screen.</li>
+<li><strong>Fedora tilted forward.</strong> Agent D's fedora now dips down in front like a classic secret agent hat, on both the menu bar and inside the app.</li>
+</ul>
+            ]]></description>
+            <description xml:lang="vi"><![CDATA[
+<p>Sửa lỗi khi dùng app toàn màn hình, tinh chỉnh icon mũ, và làm mới cửa sổ cài đặt.</p>
+<h3>Thay đổi</h3>
+<ul>
+<li><strong>Cửa sổ cài đặt gọn hơn.</strong> Cửa sổ kéo Vibeduck vào thư mục Applications giờ mang diện mạo Tiêu chuẩn của app — nền than xám trầm với một mũi tên rõ ràng duy nhất — thay cho tấm bản đồ nhiệm vụ kiểu 1.x.</li>
+</ul>
+<h3>Đã sửa</h3>
+<ul>
+<li><strong>Menu trên thanh menu hoạt động khi app khác toàn màn hình.</strong> Bấm vào icon Vibeduck trên thanh menu giờ mở bình thường ngay cả khi bạn đang mở app khác ở chế độ toàn màn hình (full screen).</li>
+<li><strong>Mũ phớt chúc về phía trước.</strong> Chiếc mũ phớt của Đặc vụ D giờ chúc nhẹ vành đen về phía trước đúng chuẩn điệp viên (kiểu Agent P), trên cả thanh menu và trong app.</li>
+</ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.2/Vibeduck.dmg"
+                sparkle:edSignature="BcWaDXdwWjfJOhwI4uRv0CSwzBIGwf2UyN/WQD1QdZ95tzbd+OC1FTwYKDN02gUTEDNZGyRhPcYrpJhvPoyRDA=="
+                length="100915667"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 2.0.1</title>
             <pubDate>Mon, 09 Nov 2026 12:17:04 +0700</pubDate>
             <sparkle:version>2.0.1</sparkle:version>
@@ -15,7 +55,7 @@
             <sparkle:informationalUpdate>
                 <sparkle:belowVersion>1.5.0</sparkle:belowVersion>
             </sparkle:informationalUpdate>
-            <description><![CDATA[
+            <description xml:lang="en"><![CDATA[
 <p>A quick fix for a problem that made Vibeduck slow down your Mac.</p>
 <h3>Changed</h3>
 <ul>
@@ -55,7 +95,7 @@
             <sparkle:informationalUpdate>
                 <sparkle:belowVersion>1.5.0</sparkle:belowVersion>
             </sparkle:informationalUpdate>
-            <description><![CDATA[
+            <description xml:lang="en"><![CDATA[
 <p>A fresh new look, a simpler default style, and converting straight from a Chrome Web Store link. Needs macOS 13.5 or later.</p>
 <h3>New</h3>
 <ul>
@@ -135,7 +175,7 @@
             <sparkle:informationalUpdate>
                 <sparkle:belowVersion>1.5.0</sparkle:belowVersion>
             </sparkle:informationalUpdate>
-            <description><![CDATA[
+            <description xml:lang="en"><![CDATA[
 <p><strong>New safe house.</strong> I moved my downloads out of a cramped Gist and into a proper public warehouse.</p>
 <h3>What changed</h3>
 <ul>
@@ -165,7 +205,7 @@
             <sparkle:informationalUpdate>
                 <sparkle:belowVersion>1.5.0</sparkle:belowVersion>
             </sparkle:informationalUpdate>
-            <description><![CDATA[
+            <description xml:lang="en"><![CDATA[
 <p><strong>Loose ends.</strong> A few things I should have caught before leaving the safe house.</p>
 <h3>Fixed</h3>
 <ul>
@@ -207,7 +247,7 @@
             <sparkle:informationalUpdate>
                 <sparkle:belowVersion>1.5.0</sparkle:belowVersion>
             </sparkle:informationalUpdate>
-            <description><![CDATA[
+            <description xml:lang="en"><![CDATA[
 <p><strong>New hat, same duck.</strong> I got tired of looking like a bath toy, so I bought a fedora.</p>
 <h3>What's new</h3>
 <ul>
