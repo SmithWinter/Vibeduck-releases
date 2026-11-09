@@ -6,6 +6,46 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>Version 2.0.1</title>
+            <pubDate>Mon, 09 Nov 2026 12:17:04 +0700</pubDate>
+            <sparkle:version>2.0.1</sparkle:version>
+            <sparkle:shortVersionString>2.0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <link>https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.1/Vibeduck.dmg</link>
+            <sparkle:informationalUpdate>
+                <sparkle:belowVersion>1.5.0</sparkle:belowVersion>
+            </sparkle:informationalUpdate>
+            <description><![CDATA[
+<p>A quick fix for a problem that made Vibeduck slow down your Mac.</p>
+<h3>Changed</h3>
+<ul>
+<li><strong>The converter now ships inside the app.</strong> The first conversion starts straight away with nothing to download, and it works offline.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li><strong>Vibeduck no longer gets stuck using your whole processor.</strong> While it was converting an extension, the little duck in the menu bar could keep redrawing itself without stopping. That used all of one processor core, made memory use climb by gigabytes, and left the conversion stuck. The duck now gently blinks while Vibeduck works, and nothing else slows down.</li>
+<li><strong>The duck's hat in Agent mode now sits the right way.</strong> The fedora tilts up on the side the duck is facing, in the app, the Dock and the menu bar.</li>
+</ul>
+            ]]></description>
+            <description xml:lang="vi"><![CDATA[
+<p>Bản sửa nhanh cho một lỗi làm máy Mac của bạn chạy chậm.</p>
+<h3>Thay đổi</h3>
+<ul>
+<li><strong>Engine chuyển đổi giờ nằm sẵn trong app.</strong> Lần chuyển đổi đầu tiên bắt đầu ngay, không cần tải gì, và chạy được cả khi không có mạng.</li>
+</ul>
+<h3>Đã sửa</h3>
+<ul>
+<li><strong>Vibeduck không còn chiếm hết sức xử lý của máy.</strong> Trong lúc chuyển đổi extension, chú vịt trên thanh menu có thể vẽ lại liên tục không ngừng. Việc này chiếm trọn một nhân xử lý, khiến bộ nhớ tăng lên tới hàng GB, và làm quá trình chuyển đổi bị kẹt. Giờ chú vịt chỉ nhấp nháy nhẹ khi Vibeduck đang làm việc, và mọi thứ khác chạy bình thường.</li>
+<li><strong>Mũ của chú vịt ở Chế độ Đặc vụ giờ đội đúng chiều.</strong> Chiếc mũ phớt hếch lên về phía chú vịt đang nhìn, trong app, trên Dock và trên thanh menu.</li>
+</ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.1/Vibeduck.dmg"
+                sparkle:edSignature="gH4TF3Ctw07CMngRoaRpVMI5ICsQbWfgM3NVmls+i6G+LAN6M2eEDM2KYHhjRpqJostgOO2wR/djTb0fPNHxAg=="
+                length="101388208"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 2.0.0</title>
             <pubDate>Sun, 08 Nov 2026 21:30:05 +0700</pubDate>
             <sparkle:version>2.0.0</sparkle:version>
