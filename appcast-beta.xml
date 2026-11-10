@@ -6,6 +6,46 @@
         <description>Beta builds, for the Beta Channel toggle in Settings.</description>
         <language>en</language>
         <item>
+            <title>Version 2.0.6-beta</title>
+            <pubDate>Tue, 10 Nov 2026 21:51:06 +0700</pubDate>
+            <sparkle:version>2.0.6</sparkle:version>
+            <sparkle:shortVersionString>2.0.6-beta</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <link>https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.6-beta/Agent-Duck-2.0.6-beta.dmg</link>
+            <sparkle:informationalUpdate>
+                <sparkle:belowVersion>1.5.0</sparkle:belowVersion>
+            </sparkle:informationalUpdate>
+            <description xml:lang="en"><![CDATA[
+<p>Every conversion now records what it did, and a problem report carries that record with it.</p>
+<h3>New</h3>
+<ul>
+<li><strong>Conversion stats.</strong> Each conversion records what happened: which extension (by its public Chrome id), whether it worked, what failed, and how long it took. Nothing identifies your Mac or you — no paths, no extension names, no account — and the day is the finest time it keeps.</li>
+<li><strong>Report a problem with the record attached.</strong> Help → Report a Problem… opens a form in the app: write what happened, see the conversions that go with it, and submit. That opens a GitHub issue with both already filled in, and you press Submit there. The app sends nothing on its own. Help → Export Conversion Stats… writes the whole file if you would rather attach it yourself. Settings → General has the same button.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li><strong>The app file is called Agent Duck.</strong> The bundle, the download and the disk image now carry the name you read everywhere else, so Finder and the menu bar tooltip stop saying Vibeduck. Nothing underneath moved: same bundle identifier, same settings, same files.</li>
+</ul>
+            ]]></description>
+            <description xml:lang="vi"><![CDATA[
+<p>Mỗi lần chuyển đổi giờ ghi lại nó đã làm gì, và báo cáo lỗi mang theo bản ghi đó.</p>
+<h3>Mới</h3>
+<ul>
+<li><strong>Thống kê chuyển đổi.</strong> Mỗi lần chuyển đổi ghi lại: extension nào (theo id Chrome công khai), thành công hay không, lỗi gì, và mất bao lâu. Không có gì nhận ra máy bạn hay bạn — không đường dẫn, không tên extension, không tài khoản — và ngày là mốc thời gian chi tiết nhất được giữ.</li>
+<li><strong>Báo lỗi kèm bản ghi.</strong> Help → Báo lỗi… mở một biểu mẫu trong app: viết chuyện gì đã xảy ra, xem những lần chuyển đổi đi kèm, rồi gửi. Gửi xong sẽ mở một issue GitHub với cả hai đã điền sẵn, và bạn bấm gửi ở đó. App không tự gửi gì. Help → Xuất thống kê chuyển đổi… ghi ra toàn bộ tệp nếu bạn muốn tự đính kèm. Cài đặt → Chung cũng có nút đó.</li>
+</ul>
+<h3>Thay đổi</h3>
+<ul>
+<li><strong>Tệp ứng dụng giờ tên là Agent Duck.</strong> Bundle, file tải về và file cài đều mang tên bạn đọc ở mọi chỗ khác, nên Finder và tooltip trên menu bar thôi ghi Vibeduck. Bên dưới không gì xê dịch: cùng bundle identifier, cùng cài đặt, cùng tệp.</li>
+</ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.6-beta/Agent-Duck-2.0.6-beta.dmg"
+                sparkle:edSignature="Mi/K1DxgWlF9QtRVSbZT/MP/AiRmUpmMLUiJRFp4SZ9/qX5GqHhyjKd+NCO4EC951s+0Fa4ddrGszX23mQqEBw=="
+                length="101675918"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 2.0.5-beta</title>
             <pubDate>Tue, 10 Nov 2026 17:13:37 +0700</pubDate>
             <sparkle:version>2.0.5</sparkle:version>
