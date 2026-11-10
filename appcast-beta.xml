@@ -1,9 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
     <channel>
-        <title>Vibeduck Beta Changelog</title>
+        <title>Agent Duck Beta Changelog</title>
         <link>https://github.com/SmithWinter/Vibeduck-releases/releases</link>
         <description>Beta builds, for the Beta Channel toggle in Settings.</description>
         <language>en</language>
+        <item>
+            <title>Version 2.0.5</title>
+            <pubDate>Tue, 10 Nov 2026 16:57:30 +0700</pubDate>
+            <sparkle:version>2.0.5</sparkle:version>
+            <sparkle:shortVersionString>2.0.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <link>https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.5/Vibeduck-2.0.5.dmg</link>
+            <sparkle:informationalUpdate>
+                <sparkle:belowVersion>1.5.0</sparkle:belowVersion>
+            </sparkle:informationalUpdate>
+            <description xml:lang="en"><![CDATA[
+<p>A beta channel you can switch on, a menu bar menu that opens over a full-screen app, and the app now calls itself Agent Duck.</p>
+<h3>New</h3>
+<ul>
+<li><strong>Beta channel.</strong> Settings → General has a switch that points updates at a separate beta feed. Turn it on to get builds before they are released; turn it off and only official releases come through. A beta you already installed is not downgraded — the next official release replaces it.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li><strong>The app is called Agent Duck.</strong> Everywhere you read it — window title, menu bar, Dock, dialogs, the Safari extension and the diagnostics report. Nothing underneath moved: same bundle identifier, same settings, same files.</li>
+<li><strong>One button after a conversion.</strong> The finished card used to offer both Open Safari Settings and Open App. It now offers only Open Safari Settings, the one that finishes the job.</li>
+<li><strong>New conversions get a Vibeduck bundle identifier.</strong> They are named <code>com.vibeduck.&lt;extension&gt;</code> instead of <code>com.viaduct.&lt;extension&gt;</code>. Extensions you converted earlier keep the identifier they were installed with.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li><strong>The menu bar menu opens over a full-screen app.</strong> macOS will not present a regular app's status menu on another app's full-screen Space: the click arrives, the menu is built, and no menu window ever appears. The app now stays in accessory mode whenever it has no window on screen, which macOS does present there. The Dock icon and the Cmd-Tab entry come back as soon as a window is open.</li>
+<li><strong>A reinstall no longer picks up Safari's own extensions.</strong> Rebuilding the list from disk used to adopt extensions that were never converted — Apple's own, or ones installed from the App Store. It now reads only the ones this app built.</li>
+</ul>
+            ]]></description>
+            <description xml:lang="vi"><![CDATA[
+<p>Có kênh thử nghiệm để bật, menu thanh menu mở được trên app đang toàn màn hình, và app mang tên Agent Duck.</p>
+<h3>Mới</h3>
+<ul>
+<li><strong>Kênh thử nghiệm.</strong> Settings → General có công tắc trỏ việc cập nhật sang một feed beta riêng. Bật lên để nhận bản dựng trước khi phát hành; tắt đi thì chỉ còn bản chính thức. Bản beta đã cài không bị hạ cấp — bản chính thức kế tiếp sẽ thay thế nó.</li>
+</ul>
+<h3>Thay đổi</h3>
+<ul>
+<li><strong>App mang tên Agent Duck.</strong> Ở mọi nơi bạn đọc — tiêu đề cửa sổ, thanh menu, Dock, hộp thoại, extension trong Safari và biên bản chẩn đoán. Bên dưới không đổi: cùng bundle, cùng cài đặt, cùng đường dẫn.</li>
+<li><strong>Chuyển xong chỉ còn một nút.</strong> Thẻ hoàn tất trước đây đưa cả Mở Safari Settings lẫn Mở app. Giờ chỉ còn Mở Safari Settings, nút chốt việc.</li>
+<li><strong>Bản chuyển mới mang bundle id Vibeduck.</strong> Chúng được đặt tên <code>com.vibeduck.&lt;extension&gt;</code> thay cho <code>com.viaduct.&lt;extension&gt;</code>. Các extension bạn chuyển trước đó giữ nguyên định danh đã cài.</li>
+</ul>
+<h3>Đã sửa</h3>
+<ul>
+<li><strong>Menu thanh menu mở được trên app đang toàn màn hình.</strong> macOS không chịu hiện menu của một app regular trên Space toàn màn hình của app khác: cú click vẫn tới, menu vẫn được dựng, nhưng không có cửa sổ menu nào hiện ra. Giờ app giữ chế độ accessory mỗi khi không có cửa sổ nào trên màn hình, và macOS hiện menu bình thường ở đó. Icon trên Dock và mục trong Cmd-Tab trở lại ngay khi có cửa sổ mở.</li>
+<li><strong>Cài lại không còn nhặt extension của Safari.</strong> Việc dựng lại danh sách từ đĩa từng nhận luôn cả extension chưa hề được chuyển — của Apple, hoặc cài từ App Store. Giờ chỉ đọc những cái do app này tạo ra.</li>
+</ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.5/Vibeduck-2.0.5.dmg"
+                sparkle:edSignature="4lKXfs9DHoHUTVOf8B/jhujS+qSuYj9/HQBB/xj1Um+SnDnGWZuKb7j/xywHfcL/GwoPcKnuMUbr5IS/67XHBQ=="
+                length="101560353"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
