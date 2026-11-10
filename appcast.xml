@@ -6,6 +6,60 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>Version 2.0.3</title>
+            <pubDate>Tue, 10 Nov 2026 11:10:30 +0700</pubDate>
+            <sparkle:version>2.0.3</sparkle:version>
+            <sparkle:shortVersionString>2.0.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <link>https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.3/Vibeduck.dmg</link>
+            <sparkle:informationalUpdate>
+                <sparkle:belowVersion>1.5.0</sparkle:belowVersion>
+            </sparkle:informationalUpdate>
+            <description xml:lang="en"><![CDATA[
+<p>Finding an extension, taking back a removal, and reporting a problem all got easier, and setup now says what Xcode costs before you download it.</p>
+<h3>New</h3>
+<ul>
+<li><strong>Search and filter your extensions.</strong> A search field above each list finds an extension by name, and a filter narrows the list to the ones that need attention.</li>
+<li><strong>Take back a removal.</strong> Removing an extension now leaves a five-second window with an Undo button, so a misclick no longer means reinstalling by hand.</li>
+<li><strong>Export a diagnostics report.</strong> Help → Export Diagnostics… writes one file with the app version, the converter's state, your Xcode status and any health problems, ready to attach when you report a bug.</li>
+<li><strong>Choose the official version once.</strong> Converting a file now asks, once per extension, whether you want the official App Store version or the converted one, instead of converting without asking.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li><strong>Setup tells you the price first.</strong> The first screen now says Xcode is about 4 GB and 30–60 minutes, and points you at the steps you can finish while it downloads.</li>
+<li><strong>The install window is back to the mission map.</strong> The plain charcoal backdrop from 2.0.2 was meant for a later release, so the map, the TOP SECRET stamp and the dashed route to Applications return.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li><strong>The menu bar icon works when the window is minimized.</strong> Clicking the duck did nothing if the main window was sitting in the Dock. It now brings the window back.</li>
+</ul>
+            ]]></description>
+            <description xml:lang="vi"><![CDATA[
+<p>Tìm extension, hoàn tác khi gỡ nhầm, và gửi báo lỗi đều dễ hơn; màn hình thiết lập giờ nói trước cái giá của Xcode.</p>
+<h3>Mới</h3>
+<ul>
+<li><strong>Tìm và lọc extension.</strong> Ô tìm kiếm ngay trên mỗi danh sách giúp tìm extension theo tên, và bộ lọc thu hẹp danh sách về những cái đang cần chú ý.</li>
+<li><strong>Hoàn tác khi gỡ nhầm.</strong> Gỡ một extension giờ để lại năm giây kèm nút Hoàn tác, nên bấm nhầm không còn phải cài lại bằng tay.</li>
+<li><strong>Xuất báo cáo chẩn đoán.</strong> Trợ giúp → Xuất chẩn đoán… ghi ra một file gồm phiên bản app, trạng thái bộ chuyển đổi, tình trạng Xcode và các vấn đề sức khoẻ, sẵn sàng gửi kèm khi bạn báo lỗi.</li>
+<li><strong>Chọn bản chính chủ một lần.</strong> Khi chuyển đổi từ file, app giờ hỏi một lần cho mỗi extension: dùng bản chính chủ trên App Store hay bản đã chuyển đổi, thay vì cứ thế chuyển luôn.</li>
+</ul>
+<h3>Thay đổi</h3>
+<ul>
+<li><strong>Màn hình thiết lập nói giá trước.</strong> Màn đầu tiên giờ ghi Xcode khoảng 4 GB và 30–60 phút, kèm chỉ dẫn tới những bước bạn làm được trong lúc chờ tải.</li>
+<li><strong>Cửa sổ cài đặt quay lại bản đồ nhiệm vụ.</strong> Nền than phẳng của 2.0.2 vốn dành cho bản sau, nên tấm bản đồ, con dấu TUYỆT MẬT và đường nét đứt dẫn tới Applications trở lại.</li>
+</ul>
+<h3>Đã sửa</h3>
+<ul>
+<li><strong>Icon thanh menu hoạt động khi cửa sổ bị thu nhỏ.</strong> Bấm vào chú vịt trước đây không có tác dụng nếu cửa sổ chính đang nằm trong Dock. Giờ cửa sổ được đưa trở lại.</li>
+</ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.3/Vibeduck.dmg"
+                sparkle:edSignature="AgP0sfUgau/8wViBztJQfbvlWDb2+r5sWjoTdQdC1sHqC3IZD4eW2VexWLnhfIqHTQDBI4csyLSUPVx70hDOCA=="
+                length="101496699"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 2.0.2</title>
             <pubDate>Mon, 09 Nov 2026 21:27:51 +0700</pubDate>
             <sparkle:version>2.0.2</sparkle:version>
