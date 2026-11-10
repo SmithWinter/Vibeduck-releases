@@ -6,12 +6,12 @@
         <description>Beta builds, for the Beta Channel toggle in Settings.</description>
         <language>en</language>
         <item>
-            <title>Version 2.0.5</title>
-            <pubDate>Tue, 10 Nov 2026 16:57:30 +0700</pubDate>
+            <title>Version 2.0.5-beta</title>
+            <pubDate>Tue, 10 Nov 2026 17:13:37 +0700</pubDate>
             <sparkle:version>2.0.5</sparkle:version>
-            <sparkle:shortVersionString>2.0.5</sparkle:shortVersionString>
+            <sparkle:shortVersionString>2.0.5-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
-            <link>https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.5/Vibeduck-2.0.5.dmg</link>
+            <link>https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.5-beta/Vibeduck-2.0.5-beta.dmg</link>
             <sparkle:informationalUpdate>
                 <sparkle:belowVersion>1.5.0</sparkle:belowVersion>
             </sparkle:informationalUpdate>
@@ -52,9 +52,9 @@
 </ul>
             ]]></description>
             <enclosure
-                url="https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.5/Vibeduck-2.0.5.dmg"
-                sparkle:edSignature="4lKXfs9DHoHUTVOf8B/jhujS+qSuYj9/HQBB/xj1Um+SnDnGWZuKb7j/xywHfcL/GwoPcKnuMUbr5IS/67XHBQ=="
-                length="101560353"
+                url="https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.5-beta/Vibeduck-2.0.5-beta.dmg"
+                sparkle:edSignature="x8cpM4axcbVbd737ZE1niYCMcLezSZozEPWnobcxzWz1u08zddVAafFKGMQhEU3sJ8Ll+x6QSLcDnXYeEvVtCQ=="
+                length="101560347"
                 type="application/octet-stream" />
         </item>
     </channel>
