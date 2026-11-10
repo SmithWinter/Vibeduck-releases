@@ -6,6 +6,60 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>Version 2.0.4</title>
+            <pubDate>Tue, 10 Nov 2026 12:38:16 +0700</pubDate>
+            <sparkle:version>2.0.4</sparkle:version>
+            <sparkle:shortVersionString>2.0.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <link>https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.4/Vibeduck-2.0.4.dmg</link>
+            <sparkle:informationalUpdate>
+                <sparkle:belowVersion>1.5.0</sparkle:belowVersion>
+            </sparkle:informationalUpdate>
+            <description xml:lang="en"><![CDATA[
+<p>The menu bar icon opens its menu on any desktop, even over a full-screen app; a reinstall finds the extensions you already converted; and the app calls itself Vibe Duck.</p>
+<h3>New</h3>
+<ul>
+<li><strong>Show only what needs attention.</strong> The recent list has a filter that hides everything that is fine, so a long list collapses to the ones with a problem.</li>
+<li><strong>Fifteen seconds to take it back.</strong> The undo window after a removal went from five seconds to fifteen. Remove a second extension while the first is still undoable and the notice names the one you are about to lose.</li>
+<li><strong>A reinstall finds your extensions again.</strong> Deleting the app and installing it again used to leave the list empty while Safari still had every extension. The app now reads the converted extensions back from <code>~/Applications</code> at launch and rebuilds the list.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li><strong>Search sits under the counts.</strong> The search field moved out of the header onto its own row beneath the stable and needs-attention chips, so the header is one line again and the field has room to be typed in.</li>
+<li><strong>The app is called Vibe Duck.</strong> Two words, everywhere you read it — window title, menu bar, Dock, dialogs and the diagnostics report. Nothing underneath moved: same bundle identifier, same settings, same files.</li>
+<li><strong>The download says which version it is.</strong> The disk image is now named <code>Vibeduck-2.0.4.dmg</code> instead of <code>Vibeduck.dmg</code>, so a folder of downloads says which build each one is.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li><strong>The menu bar icon opens on every desktop.</strong> Clicking it did nothing on some desktops, and over a full-screen app. The menu is now opened by macOS itself instead of by the app's own view code, so the click no longer depends on which desktop you are on or what is running there.</li>
+</ul>
+            ]]></description>
+            <description xml:lang="vi"><![CDATA[
+<p>Icon thanh menu mở được trên mọi desktop, kể cả khi đang có app chạy toàn màn hình; cài lại app tìm lại được các extension đã chuyển đổi; và app mang tên Vibe Duck.</p>
+<h3>Mới</h3>
+<ul>
+<li><strong>Chỉ hiện những gì cần chú ý.</strong> Danh sách gần đây có bộ lọc ẩn đi mọi thứ đang ổn, nên một danh sách dài thu lại chỉ còn những cái đang có vấn đề.</li>
+<li><strong>Mười lăm giây để hoàn tác.</strong> Thời gian hoàn tác sau khi gỡ tăng từ năm giây lên mười lăm giây. Nếu bạn gỡ thêm một extension nữa trong lúc cái đầu còn hoàn tác được, thông báo nói rõ bạn sắp mất cái nào.</li>
+<li><strong>Cài lại vẫn thấy extension cũ.</strong> Xoá app rồi cài lại từng để danh sách trống trơn trong khi Safari vẫn còn đủ extension. Giờ mỗi lần mở, app đọc lại các extension đã chuyển đổi trong <code>~/Applications</code> và dựng lại danh sách.</li>
+</ul>
+<h3>Thay đổi</h3>
+<ul>
+<li><strong>Ô tìm kiếm nằm dưới hai con số.</strong> Ô tìm kiếm rời khỏi phần đầu và xuống hàng riêng bên dưới hai chip ổn định và cần chú ý, nên phần đầu trở lại một hàng và ô nhập có chỗ để gõ.</li>
+<li><strong>App mang tên Vibe Duck.</strong> Tên giờ là hai chữ ở mọi nơi bạn đọc — tiêu đề cửa sổ, thanh menu, Dock, hộp thoại và biên bản chẩn đoán. Bên dưới không gì xê dịch: cùng bundle, cùng cài đặt, cùng đường dẫn file.</li>
+<li><strong>File tải về ghi rõ phiên bản.</strong> File cài giờ tên là <code>Vibeduck-2.0.4.dmg</code> thay vì <code>Vibeduck.dmg</code>, nên một thư mục đầy file tải vẫn nói được cái nào là bản nào.</li>
+</ul>
+<h3>Đã sửa</h3>
+<ul>
+<li><strong>Icon thanh menu mở được trên mọi desktop.</strong> Bấm vào có lúc chẳng có gì xảy ra, và bấm khi đang có app toàn màn hình thì cũng vậy. Giờ chính macOS mở menu thay vì phần giao diện của app, nên cú bấm không còn phụ thuộc vào desktop bạn đang ở hay app nào đang chạy.</li>
+</ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.4/Vibeduck-2.0.4.dmg"
+                sparkle:edSignature="1TLYGTAavja5faBKavfF4U89xEn0x7KnLhKxUdV4DtZ/+W5NwxZAbngwVakdEnQKQiX7EDbXisy+QPx+NhMECQ=="
+                length="101539677"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 2.0.3</title>
             <pubDate>Tue, 10 Nov 2026 11:10:30 +0700</pubDate>
             <sparkle:version>2.0.3</sparkle:version>
