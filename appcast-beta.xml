@@ -6,6 +6,54 @@
         <description>Beta builds, for the Beta Channel toggle in Settings.</description>
         <language>en</language>
         <item>
+            <title>Version 2.0.9-beta</title>
+            <pubDate>Wed, 11 Nov 2026 15:10:15 +0700</pubDate>
+            <sparkle:version>2.0.9</sparkle:version>
+            <sparkle:shortVersionString>2.0.9-beta</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <link>https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.9-beta/Agent-Duck-2.0.9-beta.dmg</link>
+            <sparkle:informationalUpdate>
+                <sparkle:belowVersion>1.5.0</sparkle:belowVersion>
+            </sparkle:informationalUpdate>
+            <description xml:lang="en"><![CDATA[
+<p>The menu bar menu is opened by Agent Duck itself now, and a click on the icon is recorded.</p>
+<h3>New</h3>
+<ul>
+<li><strong>A click on the icon shows up in the report.</strong> The menu bar section of a diagnostics report now records the click itself. Before, a click on the icon was invisible to the app, so a report could not tell "the click never arrived" from "the menu opened and closed".</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li><strong>The menu no longer flashes and disappears.</strong> With the app in the background and a window open, clicking the icon opened the menu and closed it again in the same instant. The menu is now presented one turn of the run loop after the click, so nothing is left to dismiss it.</li>
+<li><strong>Clicking the icon again closes the menu.</strong> It used to close and immediately reopen.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li><strong>Agent Duck opens its own menu.</strong> The menu used to be handed to AppKit, which presents it on its own terms. It is now presented by the app, which is the path the reports of "the menu does not open" point at.</li>
+</ul>
+            ]]></description>
+            <description xml:lang="vi"><![CDATA[
+<p>Menu trên thanh menu giờ do chính Agent Duck mở, và một cú bấm lên biểu tượng được ghi lại.</p>
+<h3>Mới</h3>
+<ul>
+<li><strong>Cú bấm lên biểu tượng hiện trong báo cáo.</strong> Phần thanh menu của tệp chẩn đoán giờ ghi lại chính cú bấm đó. Trước đây cú bấm lên biểu tượng là vô hình với app, nên báo cáo không phân biệt được "cú bấm không tới" với "menu đã mở rồi đóng".</li>
+</ul>
+<h3>Sửa</h3>
+<ul>
+<li><strong>Menu không còn loé lên rồi biến mất.</strong> Khi app ở phía sau và đang mở cửa sổ, bấm biểu tượng thì menu mở ra rồi đóng ngay lập tức. Giờ menu được mở sau khi sự kiện bấm đã xử lý xong, nên không còn gì đóng nó lại.</li>
+<li><strong>Bấm biểu tượng lần nữa thì menu đóng.</strong> Trước đây nó đóng rồi mở lại ngay.</li>
+</ul>
+<h3>Thay đổi</h3>
+<ul>
+<li><strong>Agent Duck tự mở menu của mình.</strong> Trước đây menu được giao cho AppKit, và AppKit tự quyết định cách hiện nó. Giờ app tự mở, đúng vào chỗ mà các báo cáo "menu không mở" chỉ tới.</li>
+</ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.9-beta/Agent-Duck-2.0.9-beta.dmg"
+                sparkle:edSignature="rxTbRFccEu/RZqi1/cPU+wWFNuHtk2f+pwkGQbX9x+ds221ZZWu724uyA+13aBwIOpb1N8xavb4fr1ChV37QDQ=="
+                length="101675152"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 2.0.8-beta</title>
             <pubDate>Wed, 11 Nov 2026 13:40:53 +0700</pubDate>
             <sparkle:version>2.0.8</sparkle:version>
