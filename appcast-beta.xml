@@ -6,6 +6,46 @@
         <description>Beta builds, for the Beta Channel toggle in Settings.</description>
         <language>en</language>
         <item>
+            <title>Version 2.0.8-beta</title>
+            <pubDate>Wed, 11 Nov 2026 13:40:53 +0700</pubDate>
+            <sparkle:version>2.0.8</sparkle:version>
+            <sparkle:shortVersionString>2.0.8-beta</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <link>https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.8-beta/Agent-Duck-2.0.8-beta.dmg</link>
+            <sparkle:informationalUpdate>
+                <sparkle:belowVersion>1.5.0</sparkle:belowVersion>
+            </sparkle:informationalUpdate>
+            <description xml:lang="en"><![CDATA[
+<p>A report now goes to the maintainer's inbox, with the whole log attached.</p>
+<h3>Changed</h3>
+<ul>
+<li><strong>Reports go by email.</strong> Sending a report opens your mail app with the address filled in and the diagnostics report attached; you press Send there. Nothing is posted publicly and no server is involved. The app still sends nothing on its own.</li>
+<li><strong>The log arrives whole.</strong> It used to be cut to fit inside a link, which dropped the tail of the run and sometimes the oldest conversions with it. It now travels as an attachment, so nothing is trimmed.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li><strong>A machine with no mail account is told where the report went.</strong> The report is written to <code>~/Library/Application Support/Vibeduck/Reports</code> and the form says so, instead of closing on nothing.</li>
+</ul>
+            ]]></description>
+            <description xml:lang="vi"><![CDATA[
+<p>Báo cáo giờ đi thẳng vào hộp thư của người bảo trì, kèm nguyên vẹn nhật ký.</p>
+<h3>Thay đổi</h3>
+<ul>
+<li><strong>Báo cáo gửi bằng email.</strong> Gửi báo cáo sẽ mở ứng dụng mail với địa chỉ đã điền sẵn và tệp chẩn đoán đính kèm; bạn bấm Gửi ở đó. Không gì được đăng công khai và không có server nào ở giữa. App vẫn không tự gửi gì.</li>
+<li><strong>Nhật ký đến nguyên vẹn.</strong> Trước đây nó bị cắt cho vừa một liên kết, làm mất phần cuối của lượt chạy và có khi mất cả những lần chuyển đổi cũ nhất. Giờ nó đi theo tệp đính kèm, không cắt gì.</li>
+</ul>
+<h3>Đã sửa</h3>
+<ul>
+<li><strong>Máy chưa có tài khoản mail được báo rõ báo cáo đã đi đâu.</strong> Báo cáo được ghi vào <code>~/Library/Application Support/Vibeduck/Reports</code> và biểu mẫu nói rõ, thay vì đóng lại mà không cho biết gì.</li>
+</ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.8-beta/Agent-Duck-2.0.8-beta.dmg"
+                sparkle:edSignature="EmxhZeeEn9Fc7rBAH75zD3ZC1ANeOEHBiTpQuhtZ+UvQt3PU5PnT0H5B1iAyldYXCl4DiaqFunL38q6WaVqZDg=="
+                length="101685569"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 2.0.7-beta</title>
             <pubDate>Wed, 11 Nov 2026 09:33:58 +0700</pubDate>
             <sparkle:version>2.0.7</sparkle:version>
