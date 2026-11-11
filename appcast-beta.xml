@@ -6,6 +6,50 @@
         <description>Beta builds, for the Beta Channel toggle in Settings.</description>
         <language>en</language>
         <item>
+            <title>Version 2.0.7-beta</title>
+            <pubDate>Wed, 11 Nov 2026 09:33:58 +0700</pubDate>
+            <sparkle:version>2.0.7</sparkle:version>
+            <sparkle:shortVersionString>2.0.7-beta</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <link>https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.7-beta/Agent-Duck-2.0.7-beta.dmg</link>
+            <sparkle:informationalUpdate>
+                <sparkle:belowVersion>1.5.0</sparkle:belowVersion>
+            </sparkle:informationalUpdate>
+            <description xml:lang="en"><![CDATA[
+<p>A failed conversion now offers to report itself, and the report carries the log that explains it.</p>
+<h3>New</h3>
+<ul>
+<li><strong>Report a problem from the failure card.</strong> When a conversion fails, the card has a Report a Problem button under Try Again. It opens the same form as Help → Report a Problem…, with what failed already written in.</li>
+<li><strong>The report carries the log.</strong> The last 200 lines of the run go into the issue body, so the engine's own output arrives with the report instead of a round trip asking for it. Every absolute path in it becomes <code>&lt;path&gt;</code> first — the account name and your folder names stay on your Mac. The flags and the team id survive, because those are what the log is read for.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li><strong>A bad file and a broken engine are counted apart.</strong> The stats used to record both as one failure. They are now <code>invalidInput</code> and <code>engineLaunchFailed</code>, so a run that never started stops looking like a run that broke.</li>
+<li><strong>A failure with no reason is recorded as <code>unknown</code>.</strong> It used to be filed as a success, which made the conversion rate read better than it was.</li>
+<li><strong>The stats file is version 2.</strong> Files written by an older build still read; the two new outcomes only appear in new entries.</li>
+</ul>
+            ]]></description>
+            <description xml:lang="vi"><![CDATA[
+<p>Một lần chuyển đổi hỏng giờ tự mời bạn báo lỗi, và báo cáo mang theo nhật ký giải thích nó.</p>
+<h3>Mới</h3>
+<ul>
+<li><strong>Báo lỗi ngay trên thẻ thất bại.</strong> Khi chuyển đổi hỏng, thẻ có thêm nút Báo lỗi dưới nút Thử lại. Nút mở đúng biểu mẫu của Help → Báo lỗi…, với phần lỗi gì đã điền sẵn.</li>
+<li><strong>Báo cáo mang theo nhật ký.</strong> 200 dòng cuối của lượt chạy được đưa vào nội dung issue, nên output của engine đến cùng báo cáo thay vì phải hỏi lại một vòng. Mọi đường dẫn tuyệt đối trong đó được đổi thành <code>&lt;path&gt;</code> trước — tên tài khoản và tên thư mục của bạn ở lại trên máy bạn. Các cờ và team id vẫn còn, vì đó mới là thứ người ta đọc nhật ký để tìm.</li>
+</ul>
+<h3>Thay đổi</h3>
+<ul>
+<li><strong>Tệp hỏng và engine hỏng được đếm riêng.</strong> Thống kê trước đây ghi cả hai là một loại thất bại. Giờ là <code>invalidInput</code> và <code>engineLaunchFailed</code>, nên một lượt chưa từng chạy không còn trông giống một lượt đã chạy rồi hỏng.</li>
+<li><strong>Thất bại không rõ lý do được ghi là <code>unknown</code>.</strong> Trước đây nó bị xếp vào thành công, làm tỉ lệ chuyển đổi đọc đẹp hơn thực tế.</li>
+<li><strong>Tệp thống kê lên phiên bản 2.</strong> Tệp do bản cũ ghi vẫn đọc được; hai kết quả mới chỉ xuất hiện ở các mục mới.</li>
+</ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.7-beta/Agent-Duck-2.0.7-beta.dmg"
+                sparkle:edSignature="RYoqj8G/d1txjBcnSoBMDIIw0S9OjW7q0C7IC8tzABI3hqJ5jA0UpS18g1Th9Q2DwrKqIN3dysoBertdSrilDA=="
+                length="101675093"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 2.0.6-beta</title>
             <pubDate>Tue, 10 Nov 2026 21:51:06 +0700</pubDate>
             <sparkle:version>2.0.6</sparkle:version>
