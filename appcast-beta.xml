@@ -6,6 +6,54 @@
         <description>Beta builds, for the Beta Channel toggle in Settings.</description>
         <language>en</language>
         <item>
+            <title>Version 2.0.10-beta</title>
+            <pubDate>Wed, 11 Nov 2026 15:53:44 +0700</pubDate>
+            <sparkle:version>2.0.10</sparkle:version>
+            <sparkle:shortVersionString>2.0.10-beta</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <link>https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.10-beta/Agent-Duck-2.0.10-beta.dmg</link>
+            <sparkle:informationalUpdate>
+                <sparkle:belowVersion>1.5.0</sparkle:belowVersion>
+            </sparkle:informationalUpdate>
+            <description xml:lang="en"><![CDATA[
+<p>The menu bar menu now opens over another app's full-screen window, and clicking the icon no longer pulls you away from it.</p>
+<h3>Fixed</h3>
+<ul>
+<li><strong>The menu opens over a full-screen app.</strong> With Agent Duck's window open and another app in full screen, clicking the icon did nothing: the click arrived, the menu was prepared, and no menu appeared. It now opens where you are. Switching Space or clicking the Dock icon used to be the only way to make it work.</li>
+<li><strong>Clicking the icon no longer switches Space.</strong> The click used to activate the app, which pulled you to the Space its window was on. It no longer does.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li><strong>The app is a background app whenever you are not in it.</strong> The Dock icon and the Cmd-Tab entry are there while you are using Agent Duck, and gone the moment you switch away. That is what lets the menu open over another app's full screen.</li>
+</ul>
+<h3>Note</h3>
+<ul>
+<li><strong>2.0.9-beta was withdrawn.</strong> It changed how the menu is presented, and the menu stopped opening over a full-screen app. This release goes back to the presentation 2.0.8-beta used and fixes the cause instead.</li>
+</ul>
+            ]]></description>
+            <description xml:lang="vi"><![CDATA[
+<p>Menu giờ mở được đè lên cửa sổ full màn hình của app khác, và bấm biểu tượng không còn kéo bạn ra khỏi đó.</p>
+<h3>Đã sửa</h3>
+<ul>
+<li><strong>Menu mở được đè lên app đang full màn hình.</strong> Khi cửa sổ Agent Duck đang mở và một app khác đang full màn hình, bấm biểu tượng không có gì xảy ra: cú bấm tới, menu được dựng, nhưng không có menu nào hiện ra. Giờ nó mở ngay chỗ bạn đang ở. Trước đây phải chuyển Space hoặc bấm vào Dock mới làm nó chạy.</li>
+<li><strong>Bấm biểu tượng không còn chuyển Space.</strong> Cú bấm trước đây kích hoạt app, kéo bạn về Space có cửa sổ của nó. Giờ thì không.</li>
+</ul>
+<h3>Thay đổi</h3>
+<ul>
+<li><strong>App chạy nền mỗi khi bạn không ở trong nó.</strong> Biểu tượng trên Dock và mục trong Cmd-Tab có mặt khi bạn đang dùng Agent Duck, và biến mất ngay khi bạn chuyển sang app khác. Đó là cái cho phép menu mở đè lên màn hình full của app khác.</li>
+</ul>
+<h3>Ghi chú</h3>
+<ul>
+<li><strong>2.0.9-beta đã được gỡ.</strong> Bản đó đổi cách mở menu, và menu thôi mở được đè lên app full màn hình. Bản này quay lại cách mở của 2.0.8-beta và sửa đúng nguyên nhân.</li>
+</ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.10-beta/Agent-Duck-2.0.10-beta.dmg"
+                sparkle:edSignature="0G36+MjbgtpGzD7+UIEMF8OadS4lPuq4W7CZlld5Vtto4jLIkyE6nNVFlVZ17gJd+wvpZtQXdR7LO4LewRL4Aw=="
+                length="101670827"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 2.0.8-beta</title>
             <pubDate>Wed, 11 Nov 2026 13:40:53 +0700</pubDate>
             <sparkle:version>2.0.8</sparkle:version>
