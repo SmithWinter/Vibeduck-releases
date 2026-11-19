@@ -6,6 +6,68 @@
         <description>Beta builds, for the Beta Channel toggle in Settings.</description>
         <language>en</language>
         <item>
+            <title>Version 2.0.11-beta</title>
+            <pubDate>Thu, 19 Nov 2026 12:01:48 +0700</pubDate>
+            <sparkle:version>2.0.11</sparkle:version>
+            <sparkle:shortVersionString>2.0.11-beta</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <link>https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.11-beta/Agent-Duck-2.0.11-beta.dmg</link>
+            <sparkle:informationalUpdate>
+                <sparkle:belowVersion>1.5.0</sparkle:belowVersion>
+            </sparkle:informationalUpdate>
+            <description xml:lang="en"><![CDATA[
+<p>A hardening release. Two copies of the app can no longer run the engine at once, the app runs with the hardened runtime, and the engine no longer searches a folder anyone can write to. One real leak is fixed: a converted extension's saved settings could end up in an export.</p>
+<h3>Fixed</h3>
+<ul>
+<li><strong>Saved settings could leak into an export.</strong> The check that decides "this copy holds the user's settings, keep it out of the export" read each file as UTF-8. When an extension's background script was not UTF-8, the read failed and the check answered no, so the export carried <code>chrome.storage</code> — tokens, passwords, sessions — in plain text. It reads the bytes now.</li>
+<li><strong>Two copies of the app could run the engine at once.</strong> Each copy believed it was the only owner, so both wrote the history file and both installed over the same app. The second copy now says Agent Duck is already running in another window.</li>
+<li><strong>A zip bomb could fill the disk.</strong> Extraction is stopped by a size watchdog while it runs, instead of being checked after it finishes.</li>
+<li><strong>Re-signing could leave a half-signed app.</strong> It works on a copy now and swaps it in only once the signature verifies, and it keeps the extension's own entitlements instead of replacing them.</li>
+<li><strong>A broken signature went unnoticed.</strong> The health check asks the system to validate the seal, and reads the sandbox value from the entitlement itself instead of searching the XML for a word.</li>
+<li><strong>A store click could swallow a pending question.</strong></li>
+<li><strong>Some text was hard to read.</strong> The dark-mode pill tint sat at 4.42:1 against its background; it clears 4.5:1 now.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li><strong>The app runs with the hardened runtime.</strong> That blocks a library being injected into the app, which matters because it runs Node with your own rights. Notarization is still not done.</li>
+<li><strong>The engine no longer searches <code>/opt/homebrew/bin</code>.</strong> That folder is writable by you and by any app, and the engine uses the search path to find the tools that sign your extension.</li>
+<li><strong>The feedback sheet shows exactly what it sends</strong>, and the report no longer carries your Mac's name or your file paths.</li>
+</ul>
+<h3>Note</h3>
+<ul>
+<li><strong>The first launch after updating may ask for browser-data access again.</strong> The change in how the app is signed can reset that permission once.</li>
+</ul>
+            ]]></description>
+            <description xml:lang="vi"><![CDATA[
+<p>Bản gia cố. Hai bản app không còn chạy engine cùng lúc được, app chạy với hardened runtime, và engine không còn tìm công cụ trong thư mục ai cũng ghi được. Một lỗ rò thật đã được bịt: settings đã lưu của extension có thể lọt vào file export.</p>
+<h3>Đã sửa</h3>
+<ul>
+<li><strong>Settings đã lưu có thể lọt vào file export.</strong> Hàm quyết định "bản copy này giữ settings của người dùng, đừng đưa vào export" đọc từng file như UTF-8. Khi background script của extension không phải UTF-8, lần đọc thất bại và hàm trả lời "không", nên file export mang theo <code>chrome.storage</code> — token, mật khẩu, session — dạng chữ thường. Giờ nó đọc theo byte.</li>
+<li><strong>Hai bản app có thể chạy engine cùng lúc.</strong> Mỗi bản tưởng mình là chủ duy nhất, nên cả hai cùng ghi file lịch sử và cùng cài đè lên một app. Bản thứ hai giờ báo Agent Duck đang chạy ở cửa sổ khác.</li>
+<li><strong>Zip bomb có thể làm đầy ổ.</strong> Việc giải nén bị chặn bởi một watchdog đo dung lượng trong lúc chạy, thay vì kiểm sau khi xong.</li>
+<li><strong>Ký lại có thể để lại app ký dở.</strong> Giờ nó làm trên một bản copy và chỉ thay vào khi chữ ký đã kiểm xong, và giữ nguyên entitlements của extension thay vì thay bằng bộ khác.</li>
+<li><strong>Chữ ký hỏng không bị phát hiện.</strong> Bước khám sức khoẻ nhờ hệ thống kiểm con dấu, và đọc giá trị sandbox từ chính entitlement thay vì tìm một từ trong XML.</li>
+<li><strong>Bấm vào store có thể nuốt mất câu hỏi đang chờ.</strong></li>
+<li><strong>Vài chỗ chữ khó đọc.</strong> Màu pill ở chế độ tối chỉ đạt 4.42:1 so với nền; giờ đã trên 4.5:1.</li>
+</ul>
+<h3>Đã đổi</h3>
+<ul>
+<li><strong>App chạy với hardened runtime.</strong> Nó chặn việc tiêm thư viện lạ vào app — điều đáng lo vì app chạy Node bằng quyền của bạn. Notarize vẫn chưa làm.</li>
+<li><strong>Engine không còn tìm trong <code>/opt/homebrew/bin</code>.</strong> Thư mục đó bạn và bất kỳ app nào cũng ghi được, mà engine dùng đường tìm kiếm đó để tìm công cụ ký extension.</li>
+<li><strong>Form góp ý hiện đúng thứ nó gửi</strong>, và báo cáo không còn mang tên máy hay đường dẫn file của bạn.</li>
+</ul>
+<h3>Ghi chú</h3>
+<ul>
+<li><strong>Lần mở đầu tiên sau khi cập nhật có thể hỏi lại quyền đọc dữ liệu trình duyệt.</strong> Thay đổi cách ký có thể reset quyền đó một lần.</li>
+</ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.11-beta/Agent-Duck-2.0.11-beta.dmg"
+                sparkle:edSignature="Yvx9ZIMvZEajZXIn6Wnc/ib+tGxAYj/kE/asgoOAp+EDwC0WL3trvD3Cwj4E3dFyWLMpWxj2sjr8/GIeGI04Dw=="
+                length="101779026"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 2.0.10-beta</title>
             <pubDate>Wed, 11 Nov 2026 15:53:44 +0700</pubDate>
             <sparkle:version>2.0.10</sparkle:version>
