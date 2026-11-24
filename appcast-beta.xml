@@ -6,6 +6,40 @@
         <description>Beta builds, for the Beta Channel toggle in Settings.</description>
         <language>en</language>
         <item>
+            <title>Version 2.0.12-beta</title>
+            <pubDate>Tue, 24 Nov 2026 23:03:15 +0700</pubDate>
+            <sparkle:version>2.0.12</sparkle:version>
+            <sparkle:shortVersionString>2.0.12-beta</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <link>https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.12-beta/Agent-Duck-2.0.12-beta.dmg</link>
+            <sparkle:informationalUpdate>
+                <sparkle:belowVersion>1.5.0</sparkle:belowVersion>
+            </sparkle:informationalUpdate>
+            <description xml:lang="en"><![CDATA[
+<p>The converter engine is now a native Swift binary built into the app. The bundled Node runtime no longer ships inside Agent Duck.</p>
+<h3>Changed</h3>
+<ul>
+<li><strong>The engine is native Swift.</strong> Conversion runs in <code>vibeduck-engine</code>, a compiled binary at <code>Contents/Resources/engine/</code>, started as a subprocess — not in Node. A crash inside it cannot take the app down, and cancelling kills its whole process group.</li>
+<li><strong>The app is much smaller.</strong> The bundled Node 26 runtime (hundreds of MB) is gone; the .app carries only the compiled engine, and the <code>allow-jit</code> entitlement Node needed is removed too.</li>
+<li><strong>Progress arrives as structured events.</strong> The engine reports phases, findings, transforms and artifacts as JSON lines on a versioned contract, instead of prose the app has to parse.</li>
+</ul>
+            ]]></description>
+            <description xml:lang="vi"><![CDATA[
+<p>Engine chuyển đổi nay là binary Swift native được build sẵn trong app. Agent Duck không còn đính kèm runtime Node bên trong nữa.</p>
+<h3>Thay đổi</h3>
+<ul>
+<li><strong>Engine chạy bằng Swift native.</strong> Việc chuyển đổi chạy trong <code>vibeduck-engine</code> — một binary đã biên dịch nằm ở <code>Contents/Resources/engine/</code>, được khởi động như một tiến trình con chứ không phải trong Node. Nếu engine crash thì app không bị sập theo, và hủy một ca chạy sẽ kill cả process group của nó.</li>
+<li><strong>App nhẹ hơn rất nhiều.</strong> Runtime Node 26 bản bundled (hàng trăm MB) đã được gỡ; .app chỉ còn chứa engine đã biên dịch, và entitlement <code>allow-jit</code> mà Node cần cũng đã được xóa.</li>
+<li><strong>Tiến trình báo cáo theo sự kiện có cấu trúc.</strong> Engine báo các giai đoạn, vấn đề, thay đổi và artifact dưới dạng dòng JSON theo một hợp đồng có phiên bản, thay vì văn bản thường mà app phải tự phân tích.</li>
+</ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.12-beta/Agent-Duck-2.0.12-beta.dmg"
+                sparkle:edSignature="V83ny0FzMNYAEquJxbLI3r8VrlSheqkXmQ734cZZMOeGNM8yh/Z+VRZIt6+WDSgLcfFzDZaG+qygZLkJOCDNBA=="
+                length="11189699"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 2.0.11-beta</title>
             <pubDate>Thu, 19 Nov 2026 12:01:48 +0700</pubDate>
             <sparkle:version>2.0.11</sparkle:version>
