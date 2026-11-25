@@ -6,6 +6,46 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>Version 2.0.13</title>
+            <pubDate>Wed, 25 Nov 2026 15:01:51 +0700</pubDate>
+            <sparkle:version>2.0.13</sparkle:version>
+            <sparkle:shortVersionString>2.0.13</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <link>https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.13/Agent-Duck-2.0.13.dmg</link>
+            <sparkle:informationalUpdate>
+                <sparkle:belowVersion>1.5.0</sparkle:belowVersion>
+            </sparkle:informationalUpdate>
+            <description xml:lang="en"><![CDATA[
+<p>The official release of the 2.0.12-beta line: a native Swift converter engine, and signing that picks its team from the keychain only.</p>
+<h3>Changed</h3>
+<ul>
+<li><strong>The engine is native Swift.</strong> Conversion runs in <code>vibeduck-engine</code>, a compiled binary at <code>Contents/Resources/engine/</code>, started as a subprocess — not in Node. A crash inside it cannot take the app down, and cancelling kills its whole process group. The bundled Node runtime is gone, so the .app is much smaller and the <code>allow-jit</code> entitlement is removed too.</li>
+<li><strong>Progress arrives as structured events.</strong> The engine reports phases, findings, transforms and artifacts as JSON lines on a versioned contract, instead of prose the app has to parse.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li><strong>The signing team came from Xcode's cache, not the keychain.</strong> The app could hand the engine a cached team id whose certificate was never installed, and every conversion then died with "no signing identity for team". Only teams that hold a signing identity in the keychain are offered now — paid membership first, personal team after — and ad-hoc signing is strictly the last resort when no identity exists at all.</li>
+</ul>
+            ]]></description>
+            <description xml:lang="vi"><![CDATA[
+<p>Bản chính thức của dòng 2.0.12-beta: engine chuyển đổi chạy bằng Swift native, và việc chọn team ký chỉ dựa vào keychain.</p>
+<h3>Thay đổi</h3>
+<ul>
+<li><strong>Engine chạy bằng Swift native.</strong> Việc chuyển đổi chạy trong <code>vibeduck-engine</code> — một binary đã biên dịch nằm ở <code>Contents/Resources/engine/</code>, khởi động như một tiến trình con chứ không phải trong Node. Engine crash không làm sập app, và hủy một ca chạy sẽ kill cả process group của nó. Runtime Node bundled đã được gỡ nên app nhẹ hơn hẳn, và entitlement <code>allow-jit</code> cũng đã được xóa.</li>
+<li><strong>Tiến trình báo cáo theo sự kiện có cấu trúc.</strong> Engine báo các giai đoạn, vấn đề, thay đổi và artifact dưới dạng dòng JSON theo một hợp đồng có phiên bản, thay vì văn bản thường mà app phải tự phân tích.</li>
+</ul>
+<h3>Sửa lỗi</h3>
+<ul>
+<li><strong>Team ký lấy từ cache của Xcode chứ không phải keychain.</strong> App có thể truyền cho engine một team id trong cache mà máy chưa từng cài certificate, và mọi ca chuyển đổi sau đó đều chết với lỗi "no signing identity for team". Giờ chỉ những team có signing identity trong keychain mới được chọn — trả phí trước, cá nhân sau — và ký ad-hoc chỉ là phương án cuối cùng khi máy không có identity nào.</li>
+</ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.13/Agent-Duck-2.0.13.dmg"
+                sparkle:edSignature="jOlrBig5BC5zNImGbBZPy9JB0CuW+e5/Q9//f7rG1rmgVtfq0rSwcWzHR6iQRPd1Zolo5j2CgHcUYVH04LOGBw=="
+                length="11193523"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 2.0.4</title>
             <pubDate>Tue, 10 Nov 2026 12:38:16 +0700</pubDate>
             <sparkle:version>2.0.4</sparkle:version>
