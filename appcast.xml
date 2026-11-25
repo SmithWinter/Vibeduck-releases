@@ -6,6 +6,40 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>Version 2.0.17</title>
+            <pubDate>Wed, 25 Nov 2026 17:47:38 +0700</pubDate>
+            <sparkle:version>2.0.17</sparkle:version>
+            <sparkle:shortVersionString>2.0.17</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <link>https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.17/Agent-Duck-2.0.17.dmg</link>
+            <sparkle:informationalUpdate>
+                <sparkle:belowVersion>1.5.0</sparkle:belowVersion>
+            </sparkle:informationalUpdate>
+            <description xml:lang="en"><![CDATA[
+<p>A store-page conversion no longer hides a running app, a hung signing process can no longer freeze a conversion forever, and the converting card now shows a percentage.</p>
+<h3>Fixed</h3>
+<ul>
+<li><strong>A store-page install no longer hides the app while it is running.</strong> The window now always comes forward on <code>vibeduck://install</code>, because a conversion can raise a question (signing identity, official version) that only the app window can answer — a hidden app leaves the store page polling a run the user cannot see.</li>
+<li><strong>A hung tool process fails the run instead of hanging it.</strong> The engine now caps the subprocesses that can stall on a locked keychain or an unreachable timestamp server (<code>codesign</code>, <code>security find-identity</code>, <code>plutil</code>, <code>codesign --verify</code>, <code>lsregister</code>/<code>ditto</code>) and kills them after the timeout (SIGTERM, then SIGKILL). The app signature also drops the deprecated <code>--deep</code> — the <code>.appex</code> is signed on its own, so the second full pass only made signing slower.</li>
+<li><strong>The converting card shows a percent loader.</strong> A slim progress bar with the percentage spelled out now sits under the step list, driven by the phase progress; a failed run freezes at the step it stopped on.</li>
+</ul>
+            ]]></description>
+            <description xml:lang="vi"><![CDATA[
+<p>Convert từ trang store không còn tự ẩn app đang chạy, một process ký bị treo không còn làm đơ cả lần convert, và card đang convert giờ có thanh phần trăm.</p>
+<h3>Sửa</h3>
+<ul>
+<li><strong>Cài từ trang store không còn tự ẩn app khi app đang chạy.</strong> Cửa sổ app giờ luôn được đưa lên khi nhận <code>vibeduck://install</code>, vì một lần convert vẫn có thể phát sinh câu hỏi (ký bằng identity nào, dùng bản official không) mà chỉ cửa sổ app mới trả lời được — app bị ẩn thì trang store cứ poll một lần chạy mà user không thấy gì.</li>
+<li><strong>Process công cụ bị treo sẽ làm fail cả lần chạy thay vì treo luôn.</strong> Engine giờ giới hạn thời gian cho các subprocess dễ treo trên keychain bị khóa hoặc timestamp server khôngreachable (<code>codesign</code>, <code>security find-identity</code>, <code>plutil</code>, <code>codesign --verify</code>, <code>lsregister</code>/<code>ditto</code>) và kill chúng sau timeout (SIGTERM, rồi SIGKILL). Lần ký app cũng bỏ <code>--deep</code> (đã deprecated) — <code>.appex</code> đã được ký riêng, ký lại toàn bộ lần nữa chỉ chậm thêm.</li>
+<li><strong>Card đang convert có thanh phần trăm.</strong> Một thanh progress mảnh kèm số phần trăm nằm dưới danh sách các bước, chạy theo tiến độ phase; nếu fail thì đóng băng ở đúng bước bị lỗi.</li>
+</ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.17/Agent-Duck-2.0.17.dmg"
+                sparkle:edSignature="VbapSIy+wC3d9rdpTTEKYrTZLuT96TKbwoN1ZAIaNOr3LLvcOXOz+/RSCA3cEW3dE6tL0exZUGdw2Mva5O3qBw=="
+                length="11249779"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 2.0.16</title>
             <pubDate>Wed, 25 Nov 2026 17:21:33 +0700</pubDate>
             <sparkle:version>2.0.16</sparkle:version>
