@@ -6,6 +6,38 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>Version 2.0.14</title>
+            <pubDate>Wed, 25 Nov 2026 15:44:41 +0700</pubDate>
+            <sparkle:version>2.0.14</sparkle:version>
+            <sparkle:shortVersionString>2.0.14</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <link>https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.14/Agent-Duck-2.0.14.dmg</link>
+            <sparkle:informationalUpdate>
+                <sparkle:belowVersion>1.5.0</sparkle:belowVersion>
+            </sparkle:informationalUpdate>
+            <description xml:lang="en"><![CDATA[
+<p>You can now choose how conversions sign: automatically with the best team, with one specific team, or ad-hoc.</p>
+<h3>Added</h3>
+<ul>
+<li><strong>A Signing picker in Settings.</strong> Automatic (the default) signs with the best team in your keychain — paid membership first, personal team after — and falls back to ad-hoc on a Mac with no signing identity. You can also pick one named team, or Ad-hoc explicitly; picking Ad-hoc skips the ad-hoc warning, since that is exactly what you chose.</li>
+<li><strong><code>--team adhoc</code> on the engine.</strong> Forces an ad-hoc signature even on a Mac that holds signing identities. <code>--team auto</code> and named team ids behave as before.</li>
+</ul>
+            ]]></description>
+            <description xml:lang="vi"><![CDATA[
+<p>Bạn có thể tự chọn cách ký khi chuyển đổi: tự động với team tốt nhất, một team cụ thể, hoặc ad-hoc.</p>
+<h3>Thêm mới</h3>
+<ul>
+<li><strong>Picker Chữ ký trong Cài đặt.</strong> Tự động (mặc định) ký bằng team tốt nhất trong keychain — trả phí trước, cá nhân sau — và chuyển sang ad-hoc nếu máy không có signing identity. Bạn cũng có thể chọn một team cụ thể, hoặc Ad-hoc một cách có chủ đích; chọn Ad-hoc sẽ không hiện cảnh báo ad-hoc nữa vì đó chính là điều bạn chọn.</li>
+<li><strong><code>--team adhoc</code> trên engine.</strong> Ép ký ad-hoc kể cả khi máy có signing identity. <code>--team auto</code> và team id cụ thể giữ nguyên hành vi cũ.</li>
+</ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.14/Agent-Duck-2.0.14.dmg"
+                sparkle:edSignature="xadeBTumRsOjQrkCl8LgHdQ22j+oRairG95KpvZP51eVON+GkgM1n/BhbOqeZ876tfO0Ti1Bdf3b5q1yQGwbAg=="
+                length="11215613"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 2.0.13</title>
             <pubDate>Wed, 25 Nov 2026 15:01:51 +0700</pubDate>
             <sparkle:version>2.0.13</sparkle:version>
