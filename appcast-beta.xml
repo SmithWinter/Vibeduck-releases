@@ -6,6 +6,44 @@
         <description>Beta builds, for the Beta Channel toggle in Settings.</description>
         <language>en</language>
         <item>
+            <title>Version 2.0.18</title>
+            <pubDate>Wed, 25 Nov 2026 18:20:07 +0700</pubDate>
+            <sparkle:version>2.0.18</sparkle:version>
+            <sparkle:shortVersionString>2.0.18</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <link>https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.18/Agent-Duck-2.0.18.dmg</link>
+            <sparkle:informationalUpdate>
+                <sparkle:belowVersion>1.5.0</sparkle:belowVersion>
+            </sparkle:informationalUpdate>
+            <description xml:lang="en"><![CDATA[
+<h3>Fixed</h3>
+<ul>
+<li>Engine signs each extension appex with its sandbox entitlement (<code>--entitlements</code>), so a converted extension keeps <code>com.apple.security.app-sandbox</code> after conversion — the root cause of Safari reporting the extension as losing its sandbox permission until the app was fully quit and relaunched.</li>
+<li>Re-signing an extension from the detail sheet now shows a percent loader while the app is copied, signed, verified, swapped and registered.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>Builds on 2.0.17: store installs always show the app window, external tool calls in the engine have timeouts with a watchdog, and the converting card shows a percent loader.</li>
+</ul>
+            ]]></description>
+            <description xml:lang="vi"><![CDATA[
+<h3>Sửa lỗi</h3>
+<ul>
+<li>Engine ký từng appex của extension kèm entitlement sandbox (<code>--entitlements</code>), nên extension sau khi convert vẫn giữ quyền <code>com.apple.security.app-sandbox</code> — nguyên nhân gốc khiến Safari báo extension bị mất quyền sandbox cho tới khi tắt hẳn app rồi mở lại.</li>
+<li>Ký lại extension trong sheet chi tiết nay có loader phần trăm trong lúc app được chép, ký, kiểm tra, thay thế và đăng ký.</li>
+</ul>
+<h3>Thay đổi</h3>
+<ul>
+<li>Kế tiếp bản 2.0.17: cài từ store luôn hiện cửa sổ app, các lệnh công cụ ngoài trong engine có timeout kèm watchdog, và thẻ đang convert có loader phần trăm.</li>
+</ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.18/Agent-Duck-2.0.18.dmg"
+                sparkle:edSignature="mSl9rUVdG73mv3EouNTt0vlO87BB8qDXrg5S1mkV0bb9WIKXxK547hVVvenqAL+en2c8JnAUasOyE/9dK6GKAw=="
+                length="11258962"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 2.0.17</title>
             <pubDate>Wed, 25 Nov 2026 17:47:38 +0700</pubDate>
             <sparkle:version>2.0.17</sparkle:version>
