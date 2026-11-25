@@ -7,7 +7,7 @@
         <language>en</language>
         <item>
             <title>Version 2.0.12-beta</title>
-            <pubDate>Tue, 24 Nov 2026 23:03:15 +0700</pubDate>
+            <pubDate>Wed, 25 Nov 2026 14:51:22 +0700</pubDate>
             <sparkle:version>2.0.12</sparkle:version>
             <sparkle:shortVersionString>2.0.12-beta</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
@@ -23,6 +23,10 @@
 <li><strong>The app is much smaller.</strong> The bundled Node 26 runtime (hundreds of MB) is gone; the .app carries only the compiled engine, and the <code>allow-jit</code> entitlement Node needed is removed too.</li>
 <li><strong>Progress arrives as structured events.</strong> The engine reports phases, findings, transforms and artifacts as JSON lines on a versioned contract, instead of prose the app has to parse.</li>
 </ul>
+<h3>Fixed (hotfix, 2026-11-25)</h3>
+<ul>
+<li><strong>The signing team came from Xcode's cache, not the keychain.</strong> The app could hand the engine a cached team id whose certificate was never installed, and every conversion then died with "no signing identity for team". Only teams that hold a signing identity in the keychain are offered now — paid membership first, personal team after — and ad-hoc signing is strictly the last resort when no identity exists at all.</li>
+</ul>
             ]]></description>
             <description xml:lang="vi"><![CDATA[
 <p>Engine chuyển đổi nay là binary Swift native được build sẵn trong app. Agent Duck không còn đính kèm runtime Node bên trong nữa.</p>
@@ -32,14 +36,18 @@
 <li><strong>App nhẹ hơn rất nhiều.</strong> Runtime Node 26 bản bundled (hàng trăm MB) đã được gỡ; .app chỉ còn chứa engine đã biên dịch, và entitlement <code>allow-jit</code> mà Node cần cũng đã được xóa.</li>
 <li><strong>Tiến trình báo cáo theo sự kiện có cấu trúc.</strong> Engine báo các giai đoạn, vấn đề, thay đổi và artifact dưới dạng dòng JSON theo một hợp đồng có phiên bản, thay vì văn bản thường mà app phải tự phân tích.</li>
 </ul>
+<h3>Sửa lỗi (hotfix, 2026-11-25)</h3>
+<ul>
+<li><strong>Team ký lấy từ cache của Xcode chứ không phải keychain.</strong> App có thể truyền cho engine một team id trong cache mà máy chưa từng cài certificate, và mọi ca chuyển đổi sau đó đều chết với lỗi "no signing identity for team". Giờ chỉ những team có signing identity trong keychain mới được chọn — trả phí trước, cá nhân sau — và ký ad-hoc chỉ là phương án cuối cùng khi máy không có identity nào.</li>
+</ul>
             ]]></description>
             <enclosure
                 url="https://github.com/SmithWinter/Vibeduck-releases/releases/download/v2.0.12-beta/Agent-Duck-2.0.12-beta.dmg"
-                sparkle:edSignature="V83ny0FzMNYAEquJxbLI3r8VrlSheqkXmQ734cZZMOeGNM8yh/Z+VRZIt6+WDSgLcfFzDZaG+qygZLkJOCDNBA=="
-                length="11189699"
+                sparkle:edSignature="tjbcvxQ3NDlo23Ic7Xv8s5sk3b9yGaOP+Iy6YOB3PXDz3kj+tcZS6zzxTiYyWbclrtQ1Fk3oV2nH1W9I4EIMCA=="
+                length="11192691"
                 type="application/octet-stream" />
         </item>
-        <item>
+                <item>
             <title>Version 2.0.11-beta</title>
             <pubDate>Thu, 19 Nov 2026 12:01:48 +0700</pubDate>
             <sparkle:version>2.0.11</sparkle:version>
