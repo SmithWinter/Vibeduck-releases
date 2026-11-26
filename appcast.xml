@@ -6,6 +6,50 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>Version 3.0.0</title>
+            <pubDate>Thu, 26 Nov 2026 11:20:00 +0700</pubDate>
+            <sparkle:version>3.0.0</sparkle:version>
+            <sparkle:shortVersionString>3.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <link>https://github.com/SmithWinter/Vibeduck-releases/releases/download/v3.0.0/Agent-Duck-3.0.0.dmg</link>
+            <sparkle:informationalUpdate>
+                <sparkle:belowVersion>1.5.0</sparkle:belowVersion>
+            </sparkle:informationalUpdate>
+            <description xml:lang="en"><![CDATA[
+<p>A main window that takes a whole batch at once, and a command palette on ⌘K.</p>
+<h3>Added</h3>
+<ul>
+<li><strong>Drop several extensions at once.</strong> The main window accepts a batch of <code>.crx</code> or <code>.zip</code> files, or unpacked folders, shows one card per extension, and converts them one after another.</li>
+<li><strong>Command palette on ⌘K.</strong> Converting, converting from a store link, re-signing all, fixing all, exporting diagnostics and stats, reporting a problem, checking for updates and jumping to any Settings page all live in one box. Type to filter the list, press Return to run the highlighted command.</li>
+<li><strong>A results panel for a finished batch.</strong> Once the batch ends, the panel lists what each extension got and offers Retry Failed, Open Safari and Close.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li><strong>The batch runs inline instead of in a modal sheet.</strong> The queue is a panel inside the main window; while it runs, each card shows its queue position, the live phase and a percent loader for the extension being converted.</li>
+<li>Builds on 2.0.19.</li>
+</ul>
+            ]]></description>
+            <description xml:lang="vi"><![CDATA[
+<p>Cửa sổ chính nhận cả một lô extension cùng lúc, và bảng lệnh mở bằng ⌘K.</p>
+<h3>Thêm</h3>
+<ul>
+<li><strong>Thả nhiều extension trong một lần.</strong> Cửa sổ chính nhận cả lô <code>.crx</code>, <code>.zip</code> hoặc thư mục đã giải nén, hiện mỗi extension một thẻ, rồi chuyển đổi lần lượt từng cái.</li>
+<li><strong>Bảng lệnh trên ⌘K.</strong> Chuyển đổi, chuyển đổi từ link cửa hàng, ký lại tất cả, sửa tất cả, xuất chẩn đoán, xuất thống kê, báo lỗi, kiểm tra cập nhật và nhảy tới bất kỳ trang Cài đặt nào đều nằm trong một ô. Gõ để lọc danh sách, nhấn Return để chạy lệnh đang chọn.</li>
+<li><strong>Panel kết quả cho lô đã xong.</strong> Khi lô kết thúc, panel liệt kê kết quả từng extension, kèm các nút Thử lại mục lỗi, Mở Safari và Đóng.</li>
+</ul>
+<h3>Thay đổi</h3>
+<ul>
+<li><strong>Cả lô chạy ngay trong cửa sổ thay vì sheet modal.</strong> Hàng đợi là một panel trong cửa sổ chính; khi đang chạy, mỗi thẻ hiện vị trí trong hàng đợi, bước đang chạy và loader phần trăm cho extension đang được chuyển.</li>
+<li>Kế tiếp bản 2.0.19.</li>
+</ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/SmithWinter/Vibeduck-releases/releases/download/v3.0.0/Agent-Duck-3.0.0.dmg"
+                sparkle:edSignature="2BMBD2mvskqzA6vR19Q7zQyOGcP1yMg2aK4sv06Wcnt0VilWd4arAwAwa2ORoruQiFJBZHFyAHoQHH/EjRafAg=="
+                length="11539764"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 2.0.19</title>
             <pubDate>Wed, 25 Nov 2026 20:56:20 +0700</pubDate>
             <sparkle:version>2.0.19</sparkle:version>
