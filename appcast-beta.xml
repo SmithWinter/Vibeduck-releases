@@ -6,6 +6,104 @@
         <description>Beta builds, for the Beta Channel toggle in Settings.</description>
         <language>en</language>
         <item>
+            <title>Version 3.0.1</title>
+            <pubDate>Fri, 27 Nov 2026 13:02:11 +0700</pubDate>
+            <sparkle:version>3.0.1</sparkle:version>
+            <sparkle:shortVersionString>3.0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <link>https://github.com/SmithWinter/Vibeduck-releases/releases/download/v3.0.1/Agent-Duck-3.0.1.dmg</link>
+            <sparkle:informationalUpdate>
+                <sparkle:belowVersion>1.5.0</sparkle:belowVersion>
+            </sparkle:informationalUpdate>
+            <description xml:lang="en"><![CDATA[
+<h3>Added</h3>
+<ul>
+<li><strong>Native Safari extensions are told apart from converted ones.</strong> Scans, the health view and re-sign now recognise an extension that is already a native Safari app extension: it gets a status pill with the reason it cannot be re-signed, and the re-sign sweep skips it instead of failing mid-run.</li>
+</ul>
+<h3>Removed</h3>
+<ul>
+<li><strong>Command palette (⌘K).</strong> Every command in it already lived in the menu bar, the main window or Settings, so the palette was more surface than value.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li>A dropped batch that the queue refuses no longer clears the card on screen: the previous result stays until a batch is actually accepted.</li>
+<li>The page-script caption in Settings → Advanced still shows the folder the app really reads, but on installs upgraded from an older build it now describes the legacy page-scripts folder generically instead of printing its old path.</li>
+<li>The Welcome and What's New windows are capped to the screen's visible frame, so their buttons stay reachable on short displays, and the Welcome card itself now scrolls, so its Continue button stays reachable even on very short windows.</li>
+<li>On a finished batch's panel, Return no longer triggers "Open Safari" (which also dismissed the results), and the panel's buttons stack vertically when the window is too narrow for one row.</li>
+<li>A conversion that wedges can no longer hold the engine slot for the life of the app: user conversions now run under the same 20-minute deadline as the auto-updater's rebuild.</li>
+<li>A history file that can't be read and can't be moved aside is now left untouched and opened read-only for that launch, instead of being replaced by an empty history.</li>
+<li>The primary button style now dims when disabled, so "Restart Now" no longer looks clickable while a conversion is running.</li>
+<li>Child-process output captured by the engine supervisor is now capped (head and tail kept), so a chatty helper can no longer grow memory without bound.</li>
+<li>The glass toggle in Settings now announces "On"/"Off" to VoiceOver in the active language instead of a hardcoded English word.</li>
+<li>The extension checkbox in Chrome import and the page-script folder field in Settings → Advanced now have accessibility labels.</li>
+<li>Quitting the app now asks for confirmation while a store download is in flight, and cancels it on quit.</li>
+<li><code>scripts/test.sh</code> passes the test-host bundle id itself when Agent Duck is installed, so the documented test command is green on a normal dev machine.</li>
+<li><code>scripts/re-sign.sh</code> no longer abandons the rest of the sweep when it refuses one native Safari extension; it skips that app and exits non-zero at the end if any were skipped.</li>
+<li>For updaters straight from 2.0.19: the hardening fixes that shipped inside the 3.0.0 build without their own changelog entry (per-tool timeouts on the re-sign path, a bounded signing probe, the double-click race on Re-sign all / Fix all) are listed here so they are visible.</li>
+<li>An extension that Safari has on could still be flagged "Not turned on in Safari" for hours: the PlugInKit listing was read once and a transient empty answer stuck until the next scan. An empty listing is now re-checked before it counts, and a not-registered finding is confirmed by a second scan before it is shown.</li>
+<li>Registration is now matched by the extension's own install path, not by bundle id alone, so an app that was moved or re-signed to a new location is no longer misreported as not turned on; and the pill distinguishes "Not registered in Safari" from "Turned off in Safari" when Safari's own extension settings are readable — an unknown state is never reported as a problem.</li>
+<li>A persistent "not registered" finding no longer makes the health monitor rescan every few seconds for the rest of the session: a finding already on screen is confirmed once and then left alone.</li>
+<li>Engine tools now run in their own process group and the engine forwards SIGTERM/SIGINT to them, so Cancel, the 20-minute run deadline and quitting the app actually stop <code>xcodebuild</code>/<code>codesign</code> instead of leaving them running into a workspace whose cleanup never runs.</li>
+<li>A tool killed by its timeout now keeps the output captured before the deadline in the log, instead of returning empty streams.</li>
+<li>Child processes no longer inherit the engine's file descriptors (close-on-exec by default), and a <code>waitpid</code> interrupted by a signal no longer reports the tool as having succeeded.</li>
+<li>Engine warnings (for example web-accessible resources that will 404) now land in the run log, capped at 20 lines plus a summary so a sloppy manifest cannot flood it.</li>
+<li><code>scripts/test.sh</code> now also checks that every <code>String(localized:)</code> literal has a Vietnamese entry, so a new message can no longer ship untranslated.</li>
+<li>Removed dead code left over from the engine swap: the report-verdict parser with no caller and a test-only log slicer.</li>
+</ul>
+<h3>Changed</h3>
+<ul>
+<li>The primary and secondary button styles are now aliases of the single Raycast button family, removing the duplicated style code.</li>
+<li>Removed two unused animation tokens (<code>durationFast</code>, <code>durationDeliberate</code>).</li>
+</ul>
+            ]]></description>
+            <description xml:lang="vi"><![CDATA[
+<h3>Thêm</h3>
+<ul>
+<li><strong>Phân biệt extension native của Safari với extension đã convert.</strong> Quét, màn hình health và ký lại nay nhận ra extension đã là native Safari app extension: nó có pill trạng thái kèm lý do không thể ký lại, và đợt ký lại sẽ bỏ qua thay vì lỗi giữa chừng.</li>
+</ul>
+<h3>Gỡ bỏ</h3>
+<ul>
+<li><strong>Bảng lệnh (⌘K).</strong> Mọi lệnh trong đó đã có sẵn ở thanh menu, cửa sổ chính hoặc Cài đặt, nên bảng lệnh thừa hơn là giúp ích.</li>
+</ul>
+<h3>Sửa lỗi</h3>
+<ul>
+<li>Thả một lô mà hàng đợi từ chối không còn xoá thẻ kết quả trên màn hình: kết quả trước được giữ cho tới khi một lô thực sự được nhận.</li>
+<li>Caption thư mục page-script ở Cài đặt → Nâng cao vẫn hiện đúng thư mục app đang đọc, nhưng trên bản nâng cấp từ bản cũ, caption mô tả thư mục page-scripts cũ một cách chung chung thay vì in nguyên đường dẫn cũ.</li>
+<li>Cửa sổ Welcome và What's New được kẹp theo vùng nhìn thấy của màn hình, nên các nút luôn với tới được trên màn hình thấp; bản thân thẻ Welcome nay cũng cuộn được, nên nút Tiếp tục luôn với tới được cả trên cửa sổ rất thấp.</li>
+<li>Trên panel của lô đã xong, Return không còn kích "Mở Safari" (đồng thời đóng kết quả), và các nút của panel xếp dọc khi cửa sổ quá hẹp cho một hàng.</li>
+<li>Một lượt chuyển đổi bị kẹt không còn giữ slot engine suốt vòng đời của app: chuyển đổi của người dùng nay chạy trong giới hạn 20 phút, như bản rebuild của auto-updater.</li>
+<li>File history không đọc được mà cũng không di chuyển được thì nay được giữ nguyên và mở read-only trong lần chạy đó, thay vì bị ghi đè bằng một history rỗng.</li>
+<li>Style nút chính nay mờ đi khi bị disabled, nên "Khởi động lại ngay" không còn trông như bấm được khi đang chạy chuyển đổi.</li>
+<li>Output của tiến trình con do engine supervisor thu nay được giới hạn dung lượng (giữ đầu và cuối), nên helper nói nhiều cũng không thể ngốn bộ nhớ vô hạn.</li>
+<li>Nút gạt dạng glass trong Cài đặt nay đọc "Bật"/"Tắt" cho VoiceOver theo ngôn ngữ hiện tại thay vì từ tiếng Anh cố định.</li>
+<li>Checkbox extension trong mục nhập Chrome và ô thư mục page-script ở Cài đặt → Nâng cao nay có nhãn accessibility.</li>
+<li>Thoát app nay hỏi xác nhận khi đang tải từ store, và huỷ lượt tải khi thoát.</li>
+<li><code>scripts/test.sh</code> tự truyền bundle id test-host khi Agent Duck đang được cài, nên lệnh test đúng tài liệu chạy xanh trên máy dev bình thường.</li>
+<li><code>scripts/re-sign.sh</code> không còn bỏ dở cả loạt khi từ chối một extension native: nó bỏ qua app đó và thoát mã lỗi ở cuối nếu có app bị bỏ qua.</li>
+<li>Cho người nâng cấp thẳng từ 2.0.19: các fix tăng cứng nằm trong bản 3.0.0 nhưng chưa có mục changelog riêng (timeout cho từng tool ở đường ký lại, probe ký có giới hạn thời gian, race bấm đúp ở Ký lại tất cả / Sửa tất cả) được liệt kê ở đây cho rõ.</li>
+<li>Một extension đang bật trong Safari đôi khi vẫn bị gắn cờ "Chưa bật trong Safari" trong nhiều giờ: listing của PlugInKit chỉ được đọc một lần, và một kết quả rỗng thoáng qua thì dính cho tới lần quét tiếp theo. Listing rỗng nay được hỏi lại trước khi tính, và một kết quả notRegistered phải được một lần quét thứ hai xác nhận trước khi hiển thị.</li>
+<li>Registration nay được đối chiếu theo đúng đường dẫn cài đặt của extension, không còn chỉ theo bundle id, nên app bị dời chỗ hoặc được ký lại ở vị trí mới không còn bị báo nhầm là chưa bật; và pill nay phân biệt "Chưa đăng ký trong Safari" với "Đã tắt trong Safari" khi đọc được cài đặt extension của chính Safari — trạng thái không rõ không bao giờ bị coi là lỗi.</li>
+<li>Một kết quả "chưa đăng ký" dai dẳng không còn làm health monitor quét lại vài giây một lần suốt phiên: kết quả đã hiện trên màn hình chỉ được xác nhận một lần rồi để nguyên.</li>
+<li>Tool của engine nay chạy trong process group riêng và engine chuyển tiếp SIGTERM/SIGINT cho chúng, nên Hủy, giới hạn 20 phút và thoát app thực sự dừng được <code>xcodebuild</code>/<code>codesign</code> thay vì để chạy tiếp vào một workspace không bao giờ được dọn.</li>
+<li>Tool bị kill vì hết timeout nay giữ lại toàn bộ output đã ghi trước deadline trong log, thay vì trả về stream rỗng.</li>
+<li>Tiến trình con không còn thừa kế bảng fd của engine (close-on-exec mặc định), và <code>waitpid</code> bị signal làm gián đoạn không còn báo tool là đã chạy thành công.</li>
+<li>Warning của engine (ví dụ web-accessible resources sẽ 404) nay có trong run log, giới hạn 20 dòng cộng một dòng tổng kết để manifest tự viết không thể làm đầy log.</li>
+<li><code>scripts/test.sh</code> nay còn kiểm mọi literal <code>String(localized:)</code> đều có mục tiếng Việt, nên message mới không thể ship thiếu bản dịch.</li>
+<li>Dọn dead code còn sót từ đợt đổi engine: parser đọc verdict từ report không còn được gọi và một hàm cắt log chỉ dùng trong test.</li>
+</ul>
+<h3>Thay đổi</h3>
+<ul>
+<li>Style nút chính và nút phụ nay là alias của một họ nút Raycast duy nhất, xoá phần code style trùng lặp.</li>
+<li>Xoá hai token animation không dùng (<code>durationFast</code>, <code>durationDeliberate</code>).</li>
+</ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/SmithWinter/Vibeduck-releases/releases/download/v3.0.1/Agent-Duck-3.0.1.dmg"
+                sparkle:edSignature="1OndlYo9JPJzSWfry/3Rhj9nFLH36ajcc/tx4bmWbBZjsNV07EwgmyhROJOZ4fwHuCpDkYSwSzpzzEPMkxuIAA=="
+                length="11537958"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 3.0.0</title>
             <pubDate>Thu, 26 Nov 2026 11:20:00 +0700</pubDate>
             <sparkle:version>3.0.0</sparkle:version>
