@@ -6,6 +6,52 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
+            <title>Version 3.0.2</title>
+            <pubDate>Sat, 28 Nov 2026 19:11:53 +0700</pubDate>
+            <sparkle:version>3.0.2</sparkle:version>
+            <sparkle:shortVersionString>3.0.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <link>https://github.com/SmithWinter/Vibeduck-releases/releases/download/v3.0.2/Agent-Duck-3.0.2.dmg</link>
+            <sparkle:informationalUpdate>
+                <sparkle:belowVersion>1.5.0</sparkle:belowVersion>
+            </sparkle:informationalUpdate>
+            <description xml:lang="en"><![CDATA[
+<h3>Added</h3>
+<ul>
+<li><strong>Refresh button on the extension list.</strong> Both the main window's recent-extensions panel and the Settings extension list have a refresh button that re-scans the install folders: it forgets extensions deleted in Finder, adopts converted apps a reinstall dropped from the history, and re-classifies the native hosts.</li>
+<li><strong>Native vs converted labels.</strong> Every extension row now carries a small label telling a native Safari extension (Safari's own) apart from one this app converted, and the native hosts found on disk also appear as their own labelled group under the list.</li>
+</ul>
+<h3>Fixed</h3>
+<ul>
+<li><strong>"Fix all" can no longer freeze mid-flow.</strong> A stopped run is now force-finished after its grace period even when the child process is wedged where SIGKILL cannot reach it, and each record in a bulk run — or a single re-sign — gets a 15-minute ceiling: one that outlives it is reported as failed and the run moves on instead of stalling the rest.</li>
+<li><strong>Refresh no longer hitches the UI.</strong> The install-folder scans behind refresh and launch now run off the main thread.</li>
+<li>The engine no longer signals a process id that was already reaped when forwarding a stop signal, so a recycled pid can no longer be signalled by mistake.</li>
+<li>Safari's extension-switch list is now read once per health check instead of once per extension, removing repeated permission-gated reads on multi-extension apps.</li>
+<li>A failed install (for example a full disk mid-copy) now leaves the previously installed extension untouched: the engine copies to a staging folder and swaps it in atomically.</li>
+</ul>
+            ]]></description>
+            <description xml:lang="vi"><![CDATA[
+<h3>Thêm</h3>
+<ul>
+<li><strong>Nút làm mới trên danh sách extension.</strong> Cả panel extension gần đây ở cửa sổ chính lẫn danh sách trong Cài đặt đều có nút làm mới, quét lại các thư mục cài đặt: bỏ đi extension đã xóa trong Finder, nhận lại app đã convert mà lần cài lại làm mất khỏi lịch sử, và phân loại lại các host native.</li>
+<li><strong>Nhãn native / đã convert.</strong> Mỗi dòng extension nay có một nhãn nhỏ phân biệt extension native của Safari với extension do app này convert, và các host native tìm thấy trên đĩa cũng hiện thành một nhóm có nhãn riêng bên dưới danh sách.</li>
+</ul>
+<h3>Sửa lỗi</h3>
+<ul>
+<li><strong>"Khắc phục tất cả" không còn bị đứng giữa chừng.</strong> Một tiến trình đã dừng nay được kết thúc cưỡng bức sau thời gian ân xá kể cả khi nó đang kẹt ở chỗ SIGKILL không tới được, và mỗi bản ghi trong một lượt hàng loạt — kể cả một lần ký lại đơn lẻ — đều có trần 15 phút: bản ghi nào vượt trần sẽ bị báo lỗi và lượt chạy đi tiếp thay vì làm treo cả đợt.</li>
+<li><strong>Bấm làm mới không còn làm khựng giao diện.</strong> Việc quét thư mục cài đặt đằng sau nút làm mới và lúc mở app nay chạy off main thread.</li>
+<li>Engine không còn signal một process id đã được reap khi forward tín hiệu dừng, nên một pid bị recycle không còn bị signal nhầm.</li>
+<li>Danh sách bật/tắt extension của Safari nay được đọc một lần mỗi lần health check thay vì mỗi extension một lần, giảm các lần đọc bị TCC gate trên app nhiều extension.</li>
+<li>Lỗi khi cài đặt (ví dụ đầy đĩa giữa lúc copy) không còn đè lên extension đã cài trước đó: engine copy sang thư mục staging rồi swap atomic.</li>
+</ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/SmithWinter/Vibeduck-releases/releases/download/v3.0.2/Agent-Duck-3.0.2.dmg"
+                sparkle:edSignature="I5k8f+4upkDAzkqr/XqLh2zGuLVyoUT+7jzC7rVN/Zfn0zTDdsjpNtpAxaqBemdiE6WoACxpQCbVcFDM3HRFBw=="
+                length="11703421"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 3.0.1</title>
             <pubDate>Fri, 27 Nov 2026 13:02:11 +0700</pubDate>
             <sparkle:version>3.0.1</sparkle:version>
